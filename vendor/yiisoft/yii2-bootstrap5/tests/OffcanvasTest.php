@@ -86,7 +86,7 @@ HTML;
         Offcanvas::end();
         $out = ob_get_clean();
 
-        $this->assertStringContainsString(
+        $this->assertContains(
             '<button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#w0" aria-controls="w0">Launch demo offcanvas</button>',
             $out
         );

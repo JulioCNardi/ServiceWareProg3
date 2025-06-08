@@ -10,8 +10,8 @@ use Codeception\Events;
 use Codeception\Exception\UselessTestException;
 use Codeception\PHPUnit\Wrapper\Test as TestWrapper;
 use Codeception\ResultAggregator;
+use Codeception\Test\Interfaces\ScenarioDriven;
 use Codeception\TestInterface;
-use LogicException;
 use PHPUnit\Framework\Assert;
 use PHPUnit\Framework\AssertionFailedError;
 use PHPUnit\Framework\Exception;
@@ -186,7 +186,11 @@ abstract class Test extends TestWrapper implements TestInterface, Interfaces\Des
                 $result->addFailure(new FailEvent($this, $e, $time));
                 $status = self::STATUS_FAIL;
                 $eventType = Events::TEST_FAIL;
-            } catch (Exception | Throwable $e) {
+            } catch (Exception $e) {
+                $result->addError(new FailEvent($this, $e, $time));
+                $status = self::STATUS_ERROR;
+                $eventType = Events::TEST_ERROR;
+            } catch (Throwable $e) {
                 $result->addError(new FailEvent($this, $e, $time));
                 $status = self::STATUS_ERROR;
                 $eventType = Events::TEST_ERROR;
@@ -236,8 +240,8 @@ abstract class Test extends TestWrapper implements TestInterface, Interfaces\Des
 
     public function getResultAggregator(): ResultAggregator
     {
-        if (!$this->resultAggregator instanceof ResultAggregator) {
-            throw new LogicException('ResultAggregator is not set');
+        if ($this->resultAggregator === null) {
+            throw new \LogicException('ResultAggregator is not set');
         }
         return $this->resultAggregator;
     }
@@ -266,12 +270,14 @@ abstract class Test extends TestWrapper implements TestInterface, Interfaces\Des
 
     protected function fire(string $eventType, TestEvent $event): void
     {
-        if (!$this->eventDispatcher instanceof EventDispatcher) {
+        if ($this->eventDispatcher === null) {
             throw new RuntimeException('EventDispatcher must be injected before running test');
         }
         $test = $event->getTest();
-        foreach ($test->getMetadata()->getGroups() as $group) {
-            $this->eventDispatcher->dispatch($event, $eventType . '.' . $group);
+        if ($test instanceof TestInterface) {
+            foreach ($test->getMetadata()->getGroups() as $group) {
+                $this->eventDispatcher->dispatch($event, $eventType . '.' . $group);
+            }
         }
         $this->eventDispatcher->dispatch($event, $eventType);
     }
@@ -295,7 +301,7 @@ abstract class Test extends TestWrapper implements TestInterface, Interfaces\Des
         }
 
         $lastFailure = $result->getLastFailure();
-        if (!$lastFailure instanceof FailEvent) {
+        if ($lastFailure === null) {
             return;
         }
 

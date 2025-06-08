@@ -25,11 +25,17 @@ class GenerateEnvironment extends Command
 
     protected function configure(): void
     {
-        $this->setDescription('Generates empty environment config')
-            ->addArgument('env', InputArgument::REQUIRED, 'Environment name');
+        $this->setDefinition([
+            new InputArgument('env', InputArgument::REQUIRED, 'Environment name'),
+        ]);
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output): int
+    public function getDescription(): string
+    {
+        return 'Generates empty environment config';
+    }
+
+    public function execute(InputInterface $input, OutputInterface $output): int
     {
         $config = $this->getGlobalConfig();
         if (Configuration::envsDir() === '') {
@@ -39,20 +45,19 @@ class GenerateEnvironment extends Command
                 . "envs: tests/_envs"
             );
         }
-
         $relativePath = $config['paths']['envs'];
         $env = $input->getArgument('env');
-        $file = $env . '.yml';
+        $file = "{$env}.yml";
 
         $path = $this->createDirectoryFor($relativePath, $file);
-        $saved = $this->createFile($path . $file, sprintf('# `%s` environment config goes here', $env));
+        $saved = $this->createFile($path . $file, "# `{$env}` environment config goes here");
 
         if ($saved) {
-            $output->writeln(sprintf('<info>%s config was created in %s/%s</info>', $env, $relativePath, $file));
-            return Command::SUCCESS;
+            $output->writeln("<info>{$env} config was created in {$relativePath}/{$file}</info>");
+            return 0;
+        } else {
+            $output->writeln("<error>File {$relativePath}/{$file} already exists</error>");
+            return 1;
         }
-
-        $output->writeln(sprintf('<error>File %s/%s already exists</error>', $relativePath, $file));
-        return Command::FAILURE;
     }
 }

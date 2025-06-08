@@ -111,6 +111,8 @@ class Unit implements LoaderInterface
         array $afterClassMethods,
     ): TestCaseWrapper {
 
-        return new TestCaseWrapper($testCase, $beforeClassMethods, $afterClassMethods);
+        $test = new TestCaseWrapper($testCase, $beforeClassMethods, $afterClassMethods);
+
+        return $test;
     }
 }

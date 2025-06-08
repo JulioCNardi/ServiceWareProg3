@@ -16,6 +16,7 @@ use function array_map;
 use function array_pop;
 use function count;
 use function explode;
+use function get_class;
 use function implode;
 use function in_array;
 use function is_array;
@@ -36,7 +37,7 @@ class ReflectionHelper
      *
      * @throws ReflectionException
      */
-    public static function readPrivateProperty(object $object, string $property, ?string $class = null): mixed
+    public static function readPrivateProperty(object $object, string $property, string $class = null): mixed
     {
         if (is_null($class)) {
             $class = $object;
@@ -53,7 +54,7 @@ class ReflectionHelper
      *
      * @throws ReflectionException
      */
-    public static function setPrivateProperty(object $object, string $property, $value, ?string $class = null): void
+    public static function setPrivateProperty(object $object, string $property, $value, string $class = null): void
     {
         if (is_null($class)) {
             $class = $object;
@@ -70,7 +71,7 @@ class ReflectionHelper
      *
      * @throws ReflectionException
      */
-    public static function invokePrivateMethod(?object $object, string $method, array $args = [], ?string $class = null): mixed
+    public static function invokePrivateMethod(?object $object, string $method, array $args = [], string $class = null): mixed
     {
         if (is_null($class)) {
             $class = $object;
@@ -89,7 +90,7 @@ class ReflectionHelper
      */
     public static function getClassShortName(object $object): string
     {
-        $path = explode('\\', $object::class);
+        $path = explode('\\', get_class($object));
         return array_pop($path);
     }
 
@@ -118,7 +119,7 @@ class ReflectionHelper
     {
         if ($parameter->isDefaultValueAvailable()) {
             if (method_exists($parameter, 'isDefaultValueConstant') && $parameter->isDefaultValueConstant()) {
-                $constName = (string)$parameter->getDefaultValueConstantName();
+                $constName = $parameter->getDefaultValueConstantName();
                 if (str_contains($constName, '::')) {
                     [$class, $const] = explode('::', $constName);
                     if (in_array($class, ['self', 'static'])) {
@@ -175,7 +176,7 @@ class ReflectionHelper
             );
 
         if ($isPlainArray($array)) {
-            return '[' . implode(', ', array_map(fn($value): string => self::phpEncodeValue($value), $array)) . ']';
+            return '[' . implode(', ', array_map([self::class, 'phpEncodeValue'], $array)) . ']';
         }
 
         $values = array_map(

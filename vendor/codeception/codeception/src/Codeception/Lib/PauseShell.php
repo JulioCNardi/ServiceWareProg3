@@ -1,11 +1,9 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Codeception\Lib;
 
-use Psy\Configuration;
 use Psy\Shell;
+use Psy\Configuration;
 
 class PauseShell
 {
@@ -17,10 +15,10 @@ class PauseShell
         $relativeLogFilePath = codecept_relative_path(codecept_output_dir(self::LOG_FILE));
         $this->psyConf = new Configuration([
             'prompt' => '>> ',
-            'startupMessage' => "<warning>Execution PAUSED</warning> All commands will be saved to $relativeLogFilePath",
-            'historyFile' => codecept_output_dir(self::LOG_FILE),
-            'historySize' => 1000,
+            'startupMessage' => "<warning>Execution PAUSED</warning> All commands will be saved to $relativeLogFilePath"
         ]);
+        $this->psyConf->setHistoryFile(codecept_output_dir(self::LOG_FILE));
+        $this->psyConf->setHistorySize(1000);
     }
 
     public function addMessage(string $message): self

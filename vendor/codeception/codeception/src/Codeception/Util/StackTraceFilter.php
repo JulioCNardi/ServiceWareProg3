@@ -18,7 +18,7 @@ class StackTraceFilter
     {
         $stackTrace = $asString ? '' : [];
 
-        $trace = $e->getPrevious() instanceof Throwable ? $e->getPrevious()->getTrace() : $e->getTrace();
+        $trace = $e->getPrevious() ? $e->getPrevious()->getTrace() : $e->getTrace();
 
         $eFile = $e->getFile();
         $eLine = $e->getLine();
@@ -31,10 +31,10 @@ class StackTraceFilter
         }
 
         foreach ($trace as $step) {
-            if (self::classIsFiltered($step) && $filter) {
+            if (self::classIsFiltered($step) and $filter) {
                 continue;
             }
-            if (self::fileIsFiltered($step) && $filter) {
+            if (self::fileIsFiltered($step) and $filter) {
                 continue;
             }
 
@@ -60,14 +60,13 @@ class StackTraceFilter
         $className = $step['class'];
 
         foreach (self::$filteredClassesPattern as $filteredClassName) {
-            if (str_starts_with((string) $className, (string) $filteredClassName)) {
+            if (str_starts_with($className, $filteredClassName)) {
                 return true;
             }
         }
         return false;
     }
 
-    /** @param string[] $step */
     protected static function fileIsFiltered(array $step): bool
     {
         if (!isset($step['file'])) {
@@ -90,7 +89,12 @@ class StackTraceFilter
         if (str_contains($step['file'], $modulePath)) {
             return false; // don`t filter modules
         }
-        return str_contains($step['file'], 'src' . DIRECTORY_SEPARATOR . 'Codeception' . DIRECTORY_SEPARATOR);
+
+        if (str_contains($step['file'], 'src' . DIRECTORY_SEPARATOR . 'Codeception' . DIRECTORY_SEPARATOR)) {
+            return true;
+        }
+
+        return false;
     }
 
     private static function frameExists(array $trace, string $file, int $line): bool

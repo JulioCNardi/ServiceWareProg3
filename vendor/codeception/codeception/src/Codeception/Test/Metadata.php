@@ -131,7 +131,6 @@ class Metadata
         $this->filename = $filename;
     }
 
-    /** @return string[] */
     public function getDependencies(): array
     {
         return $this->params['depends'];
@@ -139,10 +138,7 @@ class Metadata
 
     public function isBlocked(): bool
     {
-        if ($this->getSkip() !== null) {
-            return true;
-        }
-        return $this->getIncomplete() !== null;
+        return $this->getSkip() !== null || $this->getIncomplete() !== null;
     }
 
     public function getFeature(): string
@@ -185,7 +181,7 @@ class Metadata
      * Returns test params like: env, group, skip, incomplete, etc.
      * Can return by annotation or return all if no key passed
      */
-    public function getParam(?string $key = null): mixed
+    public function getParam(string $key = null): mixed
     {
         if ($key) {
             if (isset($this->params[$key])) {
@@ -218,7 +214,7 @@ class Metadata
     {
         $params = [];
         foreach ($attributes as $attribute) {
-            $name = lcfirst(str_replace('Codeception\\Attribute\\', '', (string) $attribute->getName()));
+            $name = lcfirst(str_replace('Codeception\\Attribute\\', '', $attribute->getName()));
             if ($attribute->isRepeated()) {
                 $params[$name] ??= [];
                 $params[$name][] = $attribute->getArguments();
@@ -237,7 +233,7 @@ class Metadata
                 continue;
             };
 
-            $this->params[$single] = array_map(fn($a): array => is_array($a) ? $a : [$a], $this->params[$single]);
+            $this->params[$single] = array_map(fn($a) => is_array($a) ? $a : [$a], $this->params[$single]);
             $this->params[$single] = array_merge(...$this->params[$single]);
         }
 

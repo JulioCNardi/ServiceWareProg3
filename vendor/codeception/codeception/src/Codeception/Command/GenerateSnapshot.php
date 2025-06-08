@@ -29,12 +29,19 @@ class GenerateSnapshot extends Command
 
     protected function configure(): void
     {
-        $this->setDescription('Generates empty Snapshot class')
-            ->addArgument('suite', InputArgument::REQUIRED, 'Suite name or snapshot name)')
-            ->addArgument('snapshot', InputArgument::OPTIONAL, 'Name of snapshot');
+        $this->setDefinition([
+            new InputArgument('suite', InputArgument::REQUIRED, 'Suite name or snapshot name)'),
+            new InputArgument('snapshot', InputArgument::OPTIONAL, 'Name of snapshot'),
+        ]);
+        parent::configure();
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output): int
+    public function getDescription(): string
+    {
+        return 'Generates empty Snapshot class';
+    }
+
+    public function execute(InputInterface $input, OutputInterface $output): int
     {
         $suite = (string)$input->getArgument('suite');
         $class = $input->getArgument('snapshot');
@@ -63,9 +70,9 @@ class GenerateSnapshot extends Command
 
         if (!$res) {
             $output->writeln("<error>Snapshot {$filename} already exists</error>");
-            return Command::FAILURE;
+            return 1;
         }
         $output->writeln("<info>Snapshot was created in {$filename}</info>");
-        return Command::SUCCESS;
+        return 0;
     }
 }

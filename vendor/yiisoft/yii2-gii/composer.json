@@ -4,8 +4,7 @@
     "keywords": [
         "yii2",
         "gii",
-        "code generator",
-        "dev"
+        "code generator"
     ],
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
@@ -13,7 +12,7 @@
         "issues": "https://github.com/yiisoft/yii2-gii/issues",
         "forum": "https://www.yiiframework.com/forum/",
         "wiki": "https://www.yiiframework.com/wiki/",
-        "irc": "ircs://irc.libera.chat:6697/yii",
+        "irc": "irc://irc.freenode.net/yii",
         "source": "https://github.com/yiisoft/yii2-gii"
     },
     "authors": [

@@ -14,6 +14,7 @@ use Codeception\Subscriber\Shared\StaticEventsTrait;
 use Codeception\Test\Descriptor;
 use Codeception\Test\Interfaces\ScenarioDriven;
 use Codeception\Test\Test;
+use Codeception\TestInterface;
 use Codeception\Util\PathResolver;
 use SebastianBergmann\Template\Template;
 use SebastianBergmann\Timer\Timer;
@@ -166,14 +167,16 @@ class HtmlReporter implements EventSubscriberInterface
 
         $png = '';
         $html = '';
-        $reports = $test->getMetadata()->getReports();
-        if (isset($reports['png'])) {
-            $localPath = PathResolver::getRelativeDir($reports['png'], codecept_output_dir());
-            $png = "<tr><td class='error'><div class='screenshot'><img src='$localPath' alt='failure screenshot'></div></td></tr>";
-        }
-        if (isset($reports['html'])) {
-            $localPath = PathResolver::getRelativeDir($reports['html'], codecept_output_dir());
-            $html = "<tr><td class='error'>See <a href='$localPath' target='_blank'>HTML snapshot</a> of a failed page</td></tr>";
+        if ($test instanceof TestInterface) {
+            $reports = $test->getMetadata()->getReports();
+            if (isset($reports['png'])) {
+                $localPath = PathResolver::getRelativeDir($reports['png'], codecept_output_dir());
+                $png = "<tr><td class='error'><div class='screenshot'><img src='$localPath' alt='failure screenshot'></div></td></tr>";
+            }
+            if (isset($reports['html'])) {
+                $localPath = PathResolver::getRelativeDir($reports['html'], codecept_output_dir());
+                $html = "<tr><td class='error'>See <a href='$localPath' target='_blank'>HTML snapshot</a> of a failed page</td></tr>";
+            }
         }
 
         $toggle = $stepsBuffer ? '<span class="toggle">+</span>' : '';
@@ -246,14 +249,16 @@ class HtmlReporter implements EventSubscriberInterface
 
         $png = '';
         $html = '';
-        $reports = $test->getMetadata()->getReports();
-        if (isset($reports['png'])) {
-            $localPath = PathResolver::getRelativeDir($reports['png'], codecept_output_dir());
-            $png = "<tr><td class='error'><div class='screenshot'><img src='$localPath' alt='failure screenshot'></div></td></tr>";
-        }
-        if (isset($reports['html'])) {
-            $localPath = PathResolver::getRelativeDir($reports['html'], codecept_output_dir());
-            $html = "<tr><td class='error'>See <a href='$localPath' target='_blank'>HTML snapshot</a> of a failed page</td></tr>";
+        if ($test instanceof TestInterface) {
+            $reports = $test->getMetadata()->getReports();
+            if (isset($reports['png'])) {
+                $localPath = PathResolver::getRelativeDir($reports['png'], codecept_output_dir());
+                $png = "<tr><td class='error'><div class='screenshot'><img src='$localPath' alt='failure screenshot'></div></td></tr>";
+            }
+            if (isset($reports['html'])) {
+                $localPath = PathResolver::getRelativeDir($reports['html'], codecept_output_dir());
+                $html = "<tr><td class='error'>See <a href='$localPath' target='_blank'>HTML snapshot</a> of a failed page</td></tr>";
+            }
         }
 
         $toggle = $stepsBuffer ? '<span class="toggle">+</span>' : '';

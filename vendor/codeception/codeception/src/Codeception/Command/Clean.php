@@ -20,28 +20,30 @@ class Clean extends Command
 {
     use Shared\ConfigTrait;
 
-    protected function configure(): void
+    public function getDescription(): string
     {
-        $this->setDescription('Recursively cleans log and generated code');
+        return 'Recursively cleans log and generated code';
     }
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $this->cleanProjectsRecursively($output, Configuration::projectDir());
+        $projectDir = Configuration::projectDir();
+        $this->cleanProjectsRecursively($output, $projectDir);
         $output->writeln("Done");
-        return Command::SUCCESS;
+        return 0;
     }
 
     private function cleanProjectsRecursively(OutputInterface $output, string $projectDir): void
     {
         $config = Configuration::config($projectDir);
         $logDir = Configuration::outputDir();
-        $output->writeln(sprintf('<info>Cleaning up output %s...</info>', $logDir));
+        $output->writeln("<info>Cleaning up output " . $logDir . "...</info>");
         FileSystem::doEmptyDir($logDir);
 
         $subProjects = $config['include'];
         foreach ($subProjects as $subProject) {
-            $this->cleanProjectsRecursively($output, $projectDir . $subProject);
+            $subProjectDir = $projectDir . $subProject;
+            $this->cleanProjectsRecursively($output, $subProjectDir);
         }
     }
 }

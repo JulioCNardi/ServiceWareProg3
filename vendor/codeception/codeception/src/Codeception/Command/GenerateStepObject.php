@@ -30,23 +30,37 @@ class GenerateStepObject extends Command
 
     protected function configure(): void
     {
-        $this->setDescription('Generates empty StepObject class')
-            ->addArgument('suite', InputArgument::REQUIRED, 'Suite for StepObject')
-            ->addArgument('step', InputArgument::REQUIRED, 'StepObject name')
-            ->addOption('silent', '', InputOption::VALUE_NONE, 'Skip verification question');
+        $this->setDefinition([
+            new InputArgument('suite', InputArgument::REQUIRED, 'Suite for StepObject'),
+            new InputArgument('step', InputArgument::REQUIRED, 'StepObject name'),
+            new InputOption('silent', '', InputOption::VALUE_NONE, 'skip verification question'),
+        ]);
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output): int
+    public function getDescription(): string
+    {
+        return 'Generates empty StepObject class';
+    }
+
+    public function execute(InputInterface $input, OutputInterface $output): int
     {
         $suite = (string)$input->getArgument('suite');
         $step = $input->getArgument('step');
         $config = $this->getSuiteConfig($suite);
+
         $class = $this->getShortClassName($step);
+
         $path = $this->createDirectoryFor(Configuration::supportDir() . 'Step' . DIRECTORY_SEPARATOR . ucfirst($suite), $step);
 
-        /** @var QuestionHelper $dialog */
-        $dialog = $this->getHelper('question');
+        /**
+         * @var QuestionHelper
+         */
+        $dialog = $this->getHelperSet()->get('question');
         $filename = $path . $class . '.php';
+
+        $helper = $this->getHelper('question');
+        $question = new Question("Add action to StepObject class (ENTER to exit): ");
+
         $stepObject = new StepObjectGenerator($config, ucfirst($suite) . '\\' . $step);
 
         if (!$input->getOption('silent')) {
@@ -63,9 +77,9 @@ class GenerateStepObject extends Command
 
         if (!$res) {
             $output->writeln("<error>StepObject {$filename} already exists</error>");
-            return Command::FAILURE;
+            return 1;
         }
         $output->writeln("<info>StepObject was created in {$filename}</info>");
-        return Command::SUCCESS;
+        return 0;
     }
 }

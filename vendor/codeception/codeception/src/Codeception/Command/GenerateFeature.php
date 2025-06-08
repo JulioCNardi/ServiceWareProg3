@@ -30,16 +30,22 @@ class GenerateFeature extends Command
 
     protected function configure(): void
     {
-        $this->setDescription('Generates empty feature file in suite')
-            ->addArgument('suite', InputArgument::REQUIRED, 'suite to be tested')
-            ->addArgument('feature', InputArgument::REQUIRED, 'feature to be generated')
-            ->addOption('config', 'c', InputOption::VALUE_OPTIONAL, 'Use custom path for config');
+        $this->setDefinition([
+            new InputArgument('suite', InputArgument::REQUIRED, 'suite to be tested'),
+            new InputArgument('feature', InputArgument::REQUIRED, 'feature to be generated'),
+            new InputOption('config', 'c', InputOption::VALUE_OPTIONAL, 'Use custom path for config'),
+        ]);
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output): int
+    public function getDescription(): string
+    {
+        return 'Generates empty feature file in suite';
+    }
+
+    public function execute(InputInterface $input, OutputInterface $output): int
     {
         $suite = $input->getArgument('suite');
-        $filename = (string)$input->getArgument('feature');
+        $filename = $input->getArgument('feature');
 
         $config = $this->getSuiteConfig($suite);
         $this->createDirectoryFor($config['path'], $filename);
@@ -48,13 +54,13 @@ class GenerateFeature extends Command
         if (!preg_match('#\.feature$#', $filename)) {
             $filename .= '.feature';
         }
-        $fullPath = rtrim((string) $config['path'], DIRECTORY_SEPARATOR) . DIRECTORY_SEPARATOR . $filename;
+        $fullPath = rtrim($config['path'], DIRECTORY_SEPARATOR) . DIRECTORY_SEPARATOR . $filename;
         $res = $this->createFile($fullPath, $feature->produce());
         if (!$res) {
             $output->writeln("<error>Feature {$filename} already exists</error>");
-            return Command::FAILURE;
+            return 1;
         }
         $output->writeln("<info>Feature was created in {$fullPath}</info>");
-        return Command::SUCCESS;
+        return 0;
     }
 }

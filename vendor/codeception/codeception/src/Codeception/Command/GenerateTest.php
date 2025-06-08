@@ -23,12 +23,21 @@ class GenerateTest extends Command
 
     protected function configure(): void
     {
-        $this->setDescription('Generates empty unit test file in suite')
-            ->addArgument('suite', InputArgument::REQUIRED, 'Suite where tests will be put')
-            ->addArgument('class', InputArgument::REQUIRED, 'Class name');
+        $this->setDefinition(
+            [
+                new InputArgument('suite', InputArgument::REQUIRED, 'suite where tests will be put'),
+                new InputArgument('class', InputArgument::REQUIRED, 'class name'),
+            ]
+        );
+        parent::configure();
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output): int
+    public function getDescription(): string
+    {
+        return 'Generates empty unit test file in suite';
+    }
+
+    public function execute(InputInterface $input, OutputInterface $output): int
     {
         $suite = $input->getArgument('suite');
         $class = $input->getArgument('class');
@@ -37,16 +46,19 @@ class GenerateTest extends Command
 
         $className = $this->getShortClassName($class);
         $path = $this->createDirectoryFor($config['path'], $class);
-        $filename = $path . $this->completeSuffix($className, 'Test');
+
+        $filename = $this->completeSuffix($className, 'Test');
+        $filename = $path . $filename;
 
         $test = new TestGenerator($config, $class);
 
         $res = $this->createFile($filename, $test->produce());
+
         if (!$res) {
             $output->writeln("<error>Test {$filename} already exists</error>");
-            return Command::FAILURE;
+            return 1;
         }
         $output->writeln("<info>Test was created in {$filename}</info>");
-        return Command::SUCCESS;
+        return 0;
     }
 }

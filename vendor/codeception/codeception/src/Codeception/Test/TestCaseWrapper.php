@@ -19,14 +19,13 @@ use PHPUnit\Metadata\Api\CodeCoverage;
 use PHPUnit\Runner\Version as PHPUnitVersion;
 use PHPUnit\Util\Test as TestUtil;
 use ReflectionClass;
-use SebastianBergmann\CodeCoverage\Version as CodeCoverageVersion;
 
 /**
  * Wrapper for TestCase tests behaving like native Codeception test format
  */
 class TestCaseWrapper extends Test implements Reported, Dependent, StrictCoverage, TestInterface, Descriptive
 {
-    private readonly Metadata $metadata;
+    private Metadata $metadata;
 
     /**
      * @var array<string, mixed>
@@ -45,7 +44,11 @@ class TestCaseWrapper extends Test implements Reported, Dependent, StrictCoverag
         $this->metadata = new Metadata();
         $metadata = $this->metadata;
 
-        $methodName = PHPUnitVersion::series() < 10 ? $testCase->getName(false) : $testCase->name();
+        if (PHPUnitVersion::series() < 10) {
+            $methodName = $testCase->getName(false);
+        } else {
+            $methodName = $testCase->name();
+        }
         $metadata->setName($methodName);
         $metadata->setFilename((new ReflectionClass($testCase))->getFileName());
 
@@ -121,11 +124,6 @@ class TestCaseWrapper extends Test implements Reported, Dependent, StrictCoverag
         if (PHPUnitVersion::series() < 10) {
             return TestUtil::getLinesToBeCovered($class, $method);
         }
-
-        if (version_compare(CodeCoverageVersion::id(), '12', '>=')) {
-            return (new CodeCoverage())->coversTargets($class, $method)->asArray();
-        }
-
         return (new CodeCoverage())->linesToBeCovered($class, $method);
     }
 
@@ -137,11 +135,6 @@ class TestCaseWrapper extends Test implements Reported, Dependent, StrictCoverag
         if (PHPUnitVersion::series() < 10) {
             return TestUtil::getLinesToBeUsed($class, $method);
         }
-
-        if (version_compare(CodeCoverageVersion::id(), '12', '>=')) {
-            return (new CodeCoverage())->usesTargets($class, $method)->asArray();
-        }
-
         return (new CodeCoverage())->linesToBeUsed($class, $method);
     }
 
@@ -163,15 +156,18 @@ class TestCaseWrapper extends Test implements Reported, Dependent, StrictCoverag
         }
 
         $numberOfAssertionsPerformed = $this->getNumAssertions();
-        if (!$this->reportUselessTests || $numberOfAssertionsPerformed <= 0 || !$this->testCase->doesNotPerformAssertions()) {
-            return;
+        if (
+            $this->reportUselessTests &&
+            $numberOfAssertionsPerformed > 0 &&
+            $this->testCase->doesNotPerformAssertions()
+        ) {
+            throw new UselessTestException(
+                sprintf(
+                    'This test indicates it does not perform assertions but %d assertions were performed',
+                    $numberOfAssertionsPerformed
+                )
+            );
         }
-        throw new UselessTestException(
-            sprintf(
-                'This test indicates it does not perform assertions but %d assertions were performed',
-                $numberOfAssertionsPerformed
-            )
-        );
     }
 
     /**

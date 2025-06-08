@@ -31,7 +31,6 @@ use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\IncompleteTestError;
 use PHPUnit\Framework\SelfDescribing;
 use PHPUnit\Framework\SkippedTest;
-use SebastianBergmann\Comparator\ComparisonFailure;
 use SebastianBergmann\Timer\Duration;
 use SebastianBergmann\Timer\ResourceUsageFormatter;
 use SebastianBergmann\Timer\Timer;
@@ -43,6 +42,7 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use function array_map;
 use function array_merge;
 use function array_reverse;
+use function array_shift;
 use function codecept_relative_path;
 use function count;
 use function exec;
@@ -172,7 +172,7 @@ class Console implements EventSubscriberInterface
                 implode(
                     ', ',
                     array_map(
-                        fn ($module): string => $module->_getName(),
+                        fn ($module) => $module->_getName(),
                         $event->getSuite()->getModules()
                     )
                 )
@@ -255,6 +255,7 @@ class Console implements EventSubscriberInterface
 
     /**
      * @param FailEvent[] $defects
+     * @param string $type
      */
     private function printDefects(array $defects, string $type): void
     {
@@ -318,11 +319,11 @@ class Console implements EventSubscriberInterface
         if ($result->wasSuccessful()) {
             $style = 'warning';
             $this->message('OK, but incomplete, skipped, or useless tests!')->style($style)->writeln();
-        } elseif ($result->errorCount() !== 0) {
+        } elseif ($result->errorCount()) {
             $this->message('ERRORS!')->style($style)->writeln();
-        } elseif ($result->failureCount() !== 0) {
+        } elseif ($result->failureCount()) {
             $this->message('FAILURES!')->style($style)->writeln();
-        } elseif ($result->warningCount() !== 0) {
+        } elseif ($result->warningCount()) {
             $style = 'warning';
             $this->message('WARNINGS!')->style($style)->writeln();
         }
@@ -441,7 +442,7 @@ class Console implements EventSubscriberInterface
         }
         $metaStep = $event->getStep()->getMetaStep();
 
-        if ($metaStep instanceof Meta && $this->metaStep != $metaStep) {
+        if ($metaStep && $this->metaStep != $metaStep) {
             $this->message(' ' . $metaStep->getPrefix())
                 ->style('bold')
                 ->append($metaStep->__toString())
@@ -458,17 +459,17 @@ class Console implements EventSubscriberInterface
             return; // don't print empty comments
         }
         $msg = $this->message(' ');
-        if ($this->metaStep instanceof Meta) {
+        if ($this->metaStep) {
             $msg->append('  ');
         }
         $msg->append($step->getPrefix());
         $prefixLength = $msg->getLength();
-        if (!$this->metaStep instanceof Meta) {
+        if (!$this->metaStep) {
             $msg->style('bold');
         }
         $maxLength = $this->width - $prefixLength;
         $msg->append(OutputFormatter::escape($step->toString($maxLength)));
-        if ($this->metaStep instanceof Meta) {
+        if ($this->metaStep) {
             $msg->style('info');
         }
         $msg->writeln();
@@ -530,7 +531,7 @@ class Console implements EventSubscriberInterface
             return;
         }
         $reports = $failedTest->getMetadata()->getReports();
-        if ($reports !== []) {
+        if (!empty($reports)) {
             $this->output->writeln('<comment>Artifacts:</comment>');
             $this->output->writeln('');
         }
@@ -541,7 +542,7 @@ class Console implements EventSubscriberInterface
         }
     }
 
-    public function printException($exception, ?string $cause = null): void
+    public function printException($exception, string $cause = null): void
     {
         if ($exception instanceof SkippedTest || $exception instanceof IncompleteTestError) {
             if ($exception->getMessage() !== '') {
@@ -562,7 +563,7 @@ class Console implements EventSubscriberInterface
 
         if ($exception instanceof ExpectationFailedException) {
             $comparisonFailure = $exception->getComparisonFailure();
-            if ($comparisonFailure instanceof ComparisonFailure) {
+            if ($comparisonFailure !== null) {
                 $message->append($this->messageFactory->prepareComparisonFailureMessage($comparisonFailure));
             }
         }
@@ -778,7 +779,9 @@ class Console implements EventSubscriberInterface
             $numFails = count(
                 array_filter(
                     $test->getScenario()?->getSteps() ?? [],
-                    fn(Step $step): bool => $step->hasFailed() && $step instanceof ConditionalAssertion
+                    function (Step $step) {
+                        return $step->hasFailed() && $step instanceof ConditionalAssertion;
+                    }
                 )
             );
 
@@ -808,7 +811,7 @@ class Console implements EventSubscriberInterface
         if ($time !== 0.0) {
             $this
                 ->message(number_format(round($time, 2), 2))
-                ->prepend(' (')
+                ->prepend('(')
                 ->append('s)')
                 ->style('info')
                 ->write();

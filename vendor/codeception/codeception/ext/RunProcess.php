@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Codeception\Extension;
 
-use BadMethodCallException;
 use Codeception\Events;
 use Codeception\Exception\ExtensionException;
 use Codeception\Extension;
@@ -17,13 +16,12 @@ use function sleep;
 
 /**
  * Extension to start and stop processes per suite.
- * Can be used to start/stop selenium server, chromedriver, [MailCatcher](https://mailcatcher.me/), etc.
- * Each command is executed only once, at the beginning of the test suite. To execute a command before each test, see [Before/After Attributes](https://codeception.com/docs/AdvancedUsage#BeforeAfter-Attributes).
+ * Can be used to start/stop selenium server, chromedriver, mailcatcher, etc.
  *
- * Can be enabled in suite config:
+ * Can be configured in suite config:
  *
  * ```yaml
- * # Acceptance.suite.yml
+ * # acceptance.suite.yml
  * extensions:
  *     enabled:
  *         - Codeception\Extension\RunProcess:
@@ -33,7 +31,8 @@ use function sleep;
  * Multiple parameters can be passed as array:
  *
  * ```yaml
- * # Acceptance.suite.yml
+ * # acceptance.suite.yml
+ *
  * extensions:
  *     enabled:
  *         - Codeception\Extension\RunProcess:
@@ -43,7 +42,8 @@ use function sleep;
  *
  * In the end of a suite all launched processes will be stopped.
  *
- * To wait for the process to be launched use `sleep` option. In this case you need configuration to be specified as object:
+ * To wait for the process to be launched use `sleep` option.
+ * In this case you need configuration to be specified as object:
  *
  * ```yaml
  * extensions:
@@ -54,7 +54,7 @@ use function sleep;
  *             sleep: 5 # wait 5 seconds for processes to boot
  * ```
  *
- * HINT: You can use different configurations per environment.
+ * HINT: you can use different configurations per environment.
  */
 class RunProcess extends Extension
 {
@@ -127,7 +127,7 @@ class RunProcess extends Extension
      */
     public function __sleep()
     {
-        throw new BadMethodCallException('Cannot serialize ' . self::class);
+        throw new \BadMethodCallException('Cannot serialize ' . __CLASS__);
     }
 
     /**
@@ -138,6 +138,6 @@ class RunProcess extends Extension
      */
     public function __wakeup()
     {
-        throw new BadMethodCallException('Cannot unserialize ' . self::class);
+        throw new \BadMethodCallException('Cannot unserialize ' . __CLASS__);
     }
 }

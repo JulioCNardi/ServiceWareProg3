@@ -41,7 +41,6 @@ abstract class Step implements Stringable
 
     protected bool $isTry = false;
 
-    /** @param string[] $arguments */
     public function __construct(protected string $action, protected array $arguments = [])
     {
     }
@@ -65,14 +64,14 @@ abstract class Step implements Stringable
         $this->addMetaStep($traceLine, $stack);
     }
 
-    private function isTestFile(string $file): int|false
+    private function isTestFile(string $file)
     {
         return preg_match('#[^\\' . DIRECTORY_SEPARATOR . '](Cest|Cept|Test).php$#', $file);
     }
 
     public function getName(): string
     {
-        $class = explode('\\', self::class);
+        $class = explode('\\', __CLASS__);
         return end($class);
     }
 
@@ -125,7 +124,10 @@ abstract class Step implements Stringable
             uasort($arguments, function ($arg1, $arg2): int {
                 $length1 = mb_strlen($arg1, 'utf-8');
                 $length2 = mb_strlen($arg2, 'utf-8');
-                return $length1 <=> $length2;
+                if ($length1 === $length2) {
+                    return 0;
+                }
+                return ($length1 < $length2) ? -1 : 1;
             });
 
             $allowedLength = floor(($maxLength - $argumentCount + 1) / $argumentCount);
@@ -241,7 +243,7 @@ abstract class Step implements Stringable
 
     public function getHtml(string $highlightColor = '#732E81'): string
     {
-        if ($this->arguments === []) {
+        if (empty($this->arguments)) {
             return sprintf('%s %s', ucfirst($this->prefix), $this->humanize($this->getAction()));
         }
 
@@ -274,10 +276,10 @@ abstract class Step implements Stringable
     /**
      * @return mixed
      */
-    public function run(?ModuleContainer $container = null)
+    public function run(ModuleContainer $container = null)
     {
         $this->executed = true;
-        if (!$container instanceof ModuleContainer) {
+        if ($container === null) {
             return null;
         }
         $activeModule = $container->moduleForAction($this->action);

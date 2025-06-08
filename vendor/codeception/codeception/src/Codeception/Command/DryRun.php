@@ -18,7 +18,6 @@ use Codeception\Test\Interfaces\ScenarioDriven;
 use Codeception\Test\Test;
 use Exception;
 use InvalidArgumentException;
-use ReflectionClass;
 use ReflectionIntersectionType;
 use ReflectionMethod;
 use ReflectionNamedType;
@@ -34,7 +33,7 @@ use function preg_match;
 use function str_replace;
 
 /**
- * Shows step-by-step execution process for scenario driven tests without actually running them.
+ * Shows step by step execution process for scenario driven tests without actually running them.
  *
  * * `codecept dry-run acceptance`
  * * `codecept dry-run acceptance MyCest`
@@ -63,10 +62,10 @@ class DryRun extends Command
         return 'Prints step-by-step scenario-driven test or a feature';
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output): int
+    public function execute(InputInterface $input, OutputInterface $output): int
     {
         $this->addStyles($output);
-        $suite = (string)$input->getArgument('suite');
+        $suite = $input->getArgument('suite');
         $test = $input->getArgument('test');
 
         $config = $this->getGlobalConfig();
@@ -107,7 +106,7 @@ class DryRun extends Command
         return 0;
     }
 
-    protected function matchTestFromFilename($filename, $testsPath): array
+    protected function matchTestFromFilename($filename, $testsPath)
     {
         $filename = str_replace(['//', '\/', '\\'], '/', $filename);
         $res = preg_match("#^{$testsPath}/(.*?)/(.*)$#", $filename, $matches);
@@ -144,7 +143,7 @@ class DryRun extends Command
     private function mockModule(string $moduleName, ModuleContainer $moduleContainer): void
     {
         $module = $moduleContainer->getModule($moduleName);
-        $class = new ReflectionClass($module);
+        $class = new \ReflectionClass($module);
         $methodResults = [];
         foreach ($class->getMethods(ReflectionMethod::IS_PUBLIC) as $method) {
             if ($method->isConstructor()) {
@@ -156,7 +155,7 @@ class DryRun extends Command
         $moduleContainer->mock($moduleName, Stub::makeEmpty($module, $methodResults));
     }
 
-    private function getDefaultResultForMethod(ReflectionClass $class, ReflectionMethod $method): mixed
+    private function getDefaultResultForMethod(\ReflectionClass $class, ReflectionMethod $method): mixed
     {
         $returnType = $method->getReturnType();
 
@@ -220,7 +219,7 @@ class DryRun extends Command
         if ($extends !== null) {
             $code .= " extends \\$extends";
         }
-        if ($implements !== []) {
+        if (count($implements) > 0) {
             $code .= ' implements ' . implode(', ', $implements);
         }
         $code .= ' {}';

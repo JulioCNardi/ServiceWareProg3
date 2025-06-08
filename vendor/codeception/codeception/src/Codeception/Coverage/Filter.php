@@ -61,31 +61,40 @@ class Filter
             return $this->newWhiteList($coverage['whitelist']);
         }
 
-        foreach (['include', 'exclude'] as $type) {
-            if (!isset($coverage['whitelist'][$type])) {
-                continue;
+        if (isset($coverage['whitelist']['include'])) {
+            if (!is_array($coverage['whitelist']['include'])) {
+                throw new ConfigurationException('Error parsing yaml. Config `whitelist: include:` should be an array');
+            }
+            foreach ($coverage['whitelist']['include'] as $fileOrDir) {
+                $finder = !str_contains($fileOrDir, '*')
+                    ? [Configuration::projectDir() . DIRECTORY_SEPARATOR . $fileOrDir]
+                    : $this->matchWildcardPattern($fileOrDir);
+
+                foreach ($finder as $file) {
+                    $filter->includeFile((string)$file);
+                }
+            }
+        }
+
+        if (isset($coverage['whitelist']['exclude'])) {
+            if (!is_array($coverage['whitelist']['exclude'])) {
+                throw new ConfigurationException('Error parsing yaml. Config `whitelist: exclude:` should be an array');
             }
 
-            if (!is_array($coverage['whitelist'][$type])) {
-                throw new ConfigurationException("Error parsing yaml. Config `whitelist: {$type}:` should be an array");
-            }
-
-            foreach ($coverage['whitelist'][$type] as $fileOrDir) {
+            foreach ($coverage['whitelist']['exclude'] as $fileOrDir) {
                 try {
-                    $finder = str_contains($fileOrDir, '*')
-                        ? $this->matchWildcardPattern($fileOrDir)
-                        : [Configuration::projectDir() . DIRECTORY_SEPARATOR . $fileOrDir];
+                    $finder = !str_contains($fileOrDir, '*')
+                        ? [Configuration::projectDir() . DIRECTORY_SEPARATOR . $fileOrDir]
+                        : $this->matchWildcardPattern($fileOrDir);
 
                     foreach ($finder as $file) {
-                        $file = (string) $file;
-                        $type === 'include' ? $filter->includeFile($file) : $filter->excludeFile($file);
+                        $filter->excludeFile((string)$file);
                     }
                 } catch (DirectoryNotFoundException) {
                     continue;
                 }
             }
         }
-
         return $this;
     }
 
@@ -101,45 +110,45 @@ class Filter
             throw new ConfigurationException('Error parsing yaml. Config `whitelist: exclude:` should be an array');
         }
 
-        if ($exclude === [] && $include === []) {
+        if (count($exclude) === 0 && count($include) === 0) {
             return $this;
         }
 
-        if ($include === []) {
+        if (count($include) === 0) {
             $include = [
                 Configuration::projectDir() . DIRECTORY_SEPARATOR . '*'
             ];
         }
 
-        $allIncludedFiles = $this->matchFiles($include);
-        $allExcludedFiles = $this->matchFiles($exclude);
+        $allIncludedFiles = [];
+        foreach ($include as $fileOrDir) {
+            $finder = !str_contains($fileOrDir, '*')
+                ? $this->matchFileOrDirectory($fileOrDir)
+                : $this->matchWildcardPattern($fileOrDir);
 
-        $coveredFiles = array_diff($allIncludedFiles, $allExcludedFiles);
-
-        foreach ($coveredFiles as $coveredFile) {
-            $this->phpUnitFilter->includeFile((string) $coveredFile);
+            $allIncludedFiles += iterator_to_array($finder->getIterator());
         }
 
-        return $this;
-    }
-
-    private function matchFiles(array $files): array
-    {
-        $matchedFiles = [];
-
-        foreach ($files as $fileOrDir) {
+        $allExcludedFiles = [];
+        foreach ($exclude as $fileOrDir) {
             try {
-                $finder = str_contains($fileOrDir, '*')
-                    ? $this->matchWildcardPattern($fileOrDir)
-                    : $this->matchFileOrDirectory($fileOrDir);
+                $finder = !str_contains($fileOrDir, '*')
+                    ? $this->matchFileOrDirectory($fileOrDir)
+                    : $this->matchWildcardPattern($fileOrDir);
 
-                $matchedFiles += iterator_to_array($finder->getIterator());
+                $allExcludedFiles += iterator_to_array($finder->getIterator());
             } catch (DirectoryNotFoundException) {
                 continue;
             }
         }
 
-        return $matchedFiles;
+        $coveredFiles = array_diff($allIncludedFiles, $allExcludedFiles);
+
+        foreach ($coveredFiles as $coveredFile) {
+            $this->phpUnitFilter->includeFile((string)$coveredFile);
+        }
+
+        return $this;
     }
 
     /**
@@ -181,8 +190,11 @@ class Filter
         $finder->name($file);
         if ($parts !== []) {
             $lastPath = array_pop($parts);
-            $path = implode('/', ($lastPath === '*' ? $parts : [...$parts, $lastPath]));
-            $finder->in(Configuration::projectDir() . $path);
+            if ($lastPath === '*') {
+                $finder->in(Configuration::projectDir() . implode('/', $parts));
+            } else {
+                $finder->in(Configuration::projectDir() . implode('/', [...$parts, $lastPath]));
+            }
         }
         $finder->ignoreVCS(true)->files();
         return $finder;

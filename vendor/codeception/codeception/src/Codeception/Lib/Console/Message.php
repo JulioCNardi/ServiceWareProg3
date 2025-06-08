@@ -13,9 +13,10 @@ class Message implements Stringable
     {
     }
 
-    public function with(...$params): self
+    public function with($param): self
     {
-        $this->message = sprintf($this->message, ...$params);
+        $args = array_merge([$this->message], func_get_args());
+        $this->message = sprintf(...$args);
         return $this;
     }
 
@@ -28,6 +29,7 @@ class Message implements Stringable
     public function width(int $length, string $char = ' '): self
     {
         $messageLength = $this->getLength();
+
         if ($messageLength < $length) {
             $this->message .= str_repeat($char, $length - $messageLength);
         }
@@ -42,33 +44,42 @@ class Message implements Stringable
 
     public function write(int $verbose = OutputInterface::VERBOSITY_NORMAL): void
     {
-        if ($verbose <= $this->output->getVerbosity()) {
-            $this->output->write($this->message);
+        if ($verbose > $this->output->getVerbosity()) {
+            return;
         }
+        $this->output->write($this->message);
     }
 
     public function writeln(int $verbose = OutputInterface::VERBOSITY_NORMAL): void
     {
-        if ($verbose <= $this->output->getVerbosity()) {
-            $this->output->writeln($this->message);
+        if ($verbose > $this->output->getVerbosity()) {
+            return;
         }
+        $this->output->writeln($this->message);
     }
 
     public function prepend(Message|string $string): self
     {
-        $this->message = ($string instanceof Message ? $string->getMessage() : $string) . $this->message;
+        if ($string instanceof Message) {
+            $string = $string->getMessage();
+        }
+        $this->message = $string . $this->message;
         return $this;
     }
 
     public function append(Message|string $string): self
     {
-        $this->message .= $string instanceof Message ? $string->getMessage() : $string;
+        if ($string instanceof Message) {
+            $string = $string->getMessage();
+        }
+        $this->message .= $string;
+
         return $this;
     }
 
     public function apply(callable $func): self
     {
-        $this->message = $func($this->message);
+        $this->message = call_user_func($func, $this->message);
         return $this;
     }
 
@@ -86,6 +97,7 @@ class Message implements Stringable
     public function block(string $style): self
     {
         $this->message = $this->output->formatHelper->formatBlock($this->message, $style, true);
+
         return $this;
     }
 

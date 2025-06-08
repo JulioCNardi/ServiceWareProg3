@@ -416,11 +416,7 @@ class Stub
     private static function generateMock()
     {
         $args = func_get_args();
-        // PHPUnit 11 added the optional parameter $markAsMockObject:
-        // https://github.com/sebastianbergmann/phpunit/commit/db9ae302fe1ad89451ecfacc850e88ab7c6df5a3
-        // The parameter was removed in PHPUnit 12:
-        // https://github.com/sebastianbergmann/phpunit/commit/a98e3939c74f6103cbeb7a785b73eb4a10784474
-        if (version_compare(PHPUnitVersion::series(), '11', '>=') && version_compare(PHPUnitVersion::series(), '12', '<')) {
+        if (version_compare(PHPUnitVersion::series(), '11', '>=')) {
             if (!is_bool($args[1]) || !is_bool($args[2])) {
                 $additionalParameters = [];
                 if (!is_bool($args[1])) {

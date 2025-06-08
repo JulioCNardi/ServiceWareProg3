@@ -1,8 +1,8 @@
 <?php
 /**
- * @link https://www.yiiframework.com/
+ * @link http://www.yiiframework.com/
  * @copyright Copyright (c) 2008 Yii Software LLC
- * @license https://www.yiiframework.com/license/
+ * @license http://www.yiiframework.com/license/
  */
 
 declare(strict_types=1);
@@ -92,7 +92,10 @@ trait BootstrapWidgetTrait
             $view = $this->getView();
             BootstrapPluginAsset::register($view);
             // 'popover', 'toast' and 'tooltip' plugins not activates via data attributes
-            if ($this->clientOptions !== false || in_array($name, ['popover', 'toast', 'tooltip'], true)) {
+            if (
+                $this->clientOptions !== false
+                || in_array($name, ['popover', 'toast', 'tooltip'], true)
+           ) {
                 $name = ucfirst($name);
                 $id = $this->options['id'];
                 $options = empty($this->clientOptions) ? '{}' : Json::htmlEncode($this->clientOptions);
@@ -106,7 +109,7 @@ trait BootstrapWidgetTrait
     /**
      * Registers JS event handlers that are listed in [[clientEvents]].
      */
-    protected function registerClientEvents(?string $name = null)
+    protected function registerClientEvents(string $name = null)
     {
         if (!empty($this->clientEvents)) {
             $id = $this->options['id'];

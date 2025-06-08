@@ -22,7 +22,6 @@ use yii\helpers\ArrayHelper;
 use yii\helpers\VarDumper;
 use yii\web\IdentityInterface;
 use yii\web\User;
-use yii\di\Instance;
 
 /**
  * Debugger panel that collects and displays user data.
@@ -41,7 +40,7 @@ class UserPanel extends Panel
      * Settable: allow, roles, ips, matchCallback, denyCallback.
      * By default deny for everyone. Recommendation: can allow for administrator
      * or developer (if implement) role: ['allow' => true, 'roles' => ['admin']]
-     * @see https://www.yiiframework.com/doc-2.0/guide-security-authorization.html
+     * @see http://www.yiiframework.com/doc-2.0/guide-security-authorization.html
      * @since 2.0.10
      */
     public $ruleUserSwitch = [
@@ -59,7 +58,7 @@ class UserPanel extends Panel
     public $filterModel;
     /**
      * @var array allowed columns for GridView.
-     * @see https://www.yiiframework.com/doc-2.0/yii-grid-gridview.html#$columns-detail
+     * @see http://www.yiiframework.com/doc-2.0/yii-grid-gridview.html#$columns-detail
      * @since 2.0.10
      */
     public $filterColumns = [];
@@ -236,8 +235,7 @@ class UserPanel extends Panel
         $permissionsProvider = null;
 
         try {
-            
-            $authManager = Instance::ensure($this->module->authManager, `\yii\rbac\BaseManager`);
+            $authManager = Yii::$app->getAuthManager();
 
             if ($authManager instanceof \yii\rbac\ManagerInterface) {
                 $roles = ArrayHelper::toArray($authManager->getRolesByUser($this->getUser()->id));

@@ -15,18 +15,22 @@ class PhpCodeCoverageFactory
 
     public static function build(): CodeCoverage
     {
-        if (self::$instance instanceof CodeCoverage) {
+        if (self::$instance !== null) {
             return self::$instance;
         }
 
-        $coverageConfig = Configuration::config()['coverage'];
-        $pathCoverage = $coverageConfig['path_coverage'] ?? false;
+        $coverageConfiguration = Configuration::config()['coverage'];
+        $pathCoverage = $coverageConfiguration['path_coverage'] ?? false;
 
         $filter = new CodeCoverageFilter();
-        $selector = new Selector();
-        $driver = $pathCoverage ? $selector->forLineAndPathCoverage($filter) : $selector->forLineCoverage($filter);
+        if ($pathCoverage) {
+            $driver = (new Selector())->forLineAndPathCoverage($filter);
+        } else {
+            $driver = (new Selector())->forLineCoverage($filter);
+        }
+        self::$instance = new CodeCoverage($driver, $filter);
 
-        return self::$instance = new CodeCoverage($driver, $filter);
+        return self::$instance;
     }
 
     public static function clear(): void

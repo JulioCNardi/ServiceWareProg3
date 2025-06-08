@@ -27,11 +27,17 @@ class GenerateHelper extends Command
 
     protected function configure(): void
     {
-        $this->setDescription('Generates a new helper')
-            ->addArgument('name', InputArgument::REQUIRED, 'Helper name');
+        $this->setDefinition([
+            new InputArgument('name', InputArgument::REQUIRED, 'helper name'),
+        ]);
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output): int
+    public function getDescription(): string
+    {
+        return 'Generates new helper';
+    }
+
+    public function execute(InputInterface $input, OutputInterface $output): int
     {
         $name = ucfirst((string)$input->getArgument('name'));
         $config = $this->getGlobalConfig();
@@ -42,10 +48,10 @@ class GenerateHelper extends Command
         $res = $this->createFile($filename, (new Helper($config, $name))->produce());
         if ($res) {
             $output->writeln("<info>Helper {$filename} created</info>");
-            return Command::SUCCESS;
+            return 0;
+        } else {
+            $output->writeln("<error>Error creating helper {$filename}</error>");
+            return 1;
         }
-
-        $output->writeln(sprintf('<error>Error creating helper %s</error>', $filename));
-        return Command::FAILURE;
     }
 }

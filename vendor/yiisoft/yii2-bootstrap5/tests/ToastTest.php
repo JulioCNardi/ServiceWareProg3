@@ -130,14 +130,14 @@ HTML;
         ]);
         echo 'test';
         Toast::end();
-        ob_get_clean();
+        $out = ob_get_clean();
 
-        $this->assertIsArray($toast->clientOptions);
+        $this->assertInternalType(IsType::TYPE_ARRAY, $toast->clientOptions);
         $this->assertCount(0, $toast->clientOptions);
 
         $js = Yii::$app->view->js[View::POS_READY];
 
-        $this->assertIsArray($js);
+        $this->assertInternalType(IsType::TYPE_ARRAY, $js);
         $options = array_shift($js);
 
         $this->assertContainsWithoutLE("(new bootstrap.Toast('#w0', {}));", $options);
@@ -157,7 +157,7 @@ HTML;
         ]);
         echo 'test';
         Toast::end();
-        ob_get_clean();
+        $out = ob_get_clean();
 
         $this->assertFalse($toast->clientOptions);
         $this->assertArrayHasKey(View::POS_READY, Yii::$app->view->js);
@@ -174,13 +174,13 @@ HTML;
         ]);
         echo 'test';
         Toast::end();
-        ob_get_clean();
+        $out = ob_get_clean();
 
         $this->assertArrayHasKey('delay', $toast->clientOptions);
         $this->assertArrayHasKey(View::POS_READY, Yii::$app->view->js);
         $js = Yii::$app->view->js[View::POS_READY];
 
-        $this->assertIsArray($js);
+        $this->assertInternalType(IsType::TYPE_ARRAY, $js);
         $options = array_shift($js);
 
         $this->assertContainsWithoutLE("(new bootstrap.Toast('#w0', {\"delay\":1000}));", $options);

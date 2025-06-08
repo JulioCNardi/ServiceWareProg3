@@ -36,7 +36,6 @@ class GenerateAction extends \yii\base\Action
             $this->generateCode();
         } else {
             $this->displayValidationErrors();
-            return \yii\console\ExitCode::USAGE;
         }
     }
 
@@ -44,9 +43,9 @@ class GenerateAction extends \yii\base\Action
     {
         $this->controller->stdout("Code not generated. Please fix the following errors:\n\n", Console::FG_RED);
         foreach ($this->generator->errors as $attribute => $errors) {
-            $this->controller->stdout(' - ' . $this->controller->ansiFormat($attribute, Console::FG_CYAN) . ': ' . implode('; ', $errors) . "\n");
+            echo ' - ' . $this->controller->ansiFormat($attribute, Console::FG_CYAN) . ': ' . implode('; ', $errors) . "\n";
         }
-        $this->controller->stdout("\n");
+        echo "\n";
     }
 
     protected function generateCode()

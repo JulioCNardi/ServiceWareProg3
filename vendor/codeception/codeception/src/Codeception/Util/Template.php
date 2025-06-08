@@ -20,9 +20,9 @@ class Template
 
     public function __construct(
         private string $template,
-        private readonly string $placeholderStart = '{{',
-        private readonly string $placeholderEnd = '}}',
-        private readonly ?string $encoderFunction = null,
+        private string $placeholderStart = '{{',
+        private string $placeholderEnd = '}}',
+        private ?string $encoderFunction = null,
     ) {
     }
 
@@ -45,7 +45,10 @@ class Template
 
     public function getVar(string $name)
     {
-        return $this->vars[$name] ?? null;
+        if (isset($this->vars[$name])) {
+            return $this->vars[$name];
+        }
+        return null;
     }
 
     /**

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Codeception\Util;
 
+use Codeception\Command\Console;
 use Codeception\Lib\Console\Output;
 use Codeception\Lib\PauseShell;
 use Symfony\Component\Console\Helper\QuestionHelper;
@@ -28,7 +29,7 @@ class Debug
      */
     public static function debug(mixed $message): void
     {
-        if (!self::$output instanceof Output) {
+        if (!self::$output) {
             return;
         }
         self::$output->debug($message);
@@ -70,7 +71,7 @@ class Debug
 
     public static function confirm($question)
     {
-        if (!self::$output instanceof Output) {
+        if (!self::$output) {
             return;
         }
 

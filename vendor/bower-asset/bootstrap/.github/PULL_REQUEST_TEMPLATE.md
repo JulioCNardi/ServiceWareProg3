@@ -18,7 +18,7 @@
 ### Checklist
 
 <!-- Go over all the following points, and put an `x` in all the boxes that apply. -->
-<!-- If you’re unsure about any of these, don’t hesitate to ask. We’re here to help! -->
+<!-- If you're unsure about any of these, don't hesitate to ask. We're here to help! -->
 
 - [ ] I have read the [contributing guidelines](https://github.com/twbs/bootstrap/blob/main/.github/CONTRIBUTING.md)
 - [ ] My code follows the code style of the project _(using `npm run lint`)_
@@ -31,7 +31,7 @@
 
 <!-- Please add direct links where your modifications can be seen in the documentation -->
 
-- <https://deploy-preview-{your_pr_number}--twbs-bootstrap.netlify.app/>
+* https://deploy-preview-{your pr number}--twbs-bootstrap.netlify.app/
 
 ### Related issues
 

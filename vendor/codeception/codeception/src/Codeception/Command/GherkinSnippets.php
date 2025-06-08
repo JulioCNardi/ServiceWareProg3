@@ -31,13 +31,22 @@ class GherkinSnippets extends Command
 
     protected function configure(): void
     {
-        $this->setDescription('Fetches empty steps from feature files of suite and prints code snippets for them')
-            ->addArgument('suite', InputArgument::REQUIRED, 'Suite to scan for feature files')
-            ->addArgument('test', InputArgument::OPTIONAL, 'Test to be scanned')
-            ->addOption('config', 'c', InputOption::VALUE_OPTIONAL, 'Use custom path for config');
+        $this->setDefinition(
+            [
+                new InputArgument('suite', InputArgument::REQUIRED, 'suite to scan for feature files'),
+                new InputArgument('test', InputArgument::OPTIONAL, 'test to be scanned'),
+                new InputOption('config', 'c', InputOption::VALUE_OPTIONAL, 'Use custom path for config'),
+            ]
+        );
+        parent::configure();
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output): int
+    public function getDescription(): string
+    {
+        return 'Fetches empty steps from feature files of suite and prints code snippets for them';
+    }
+
+    public function execute(InputInterface $input, OutputInterface $output): int
     {
         $this->addStyles($output);
         $suite = $input->getArgument('suite');
@@ -45,14 +54,16 @@ class GherkinSnippets extends Command
         $config = $this->getSuiteConfig($suite);
 
         $generator = new GherkinSnippetsGenerator($config, $test);
+
         $snippets = $generator->getSnippets();
-        if ($snippets === []) {
+        if (empty($snippets)) {
             $output->writeln("<notice> All Gherkin steps are defined. Exiting... </notice>");
-            return Command::SUCCESS;
+            return 0;
         }
         $output->writeln("<comment> Snippets found in: </comment>");
 
-        foreach ($generator->getFeatures() as $feature) {
+        $features = $generator->getFeatures();
+        foreach ($features as $feature) {
             $output->writeln("<info>  - {$feature} </info>");
         }
         $output->writeln("<comment> Generated Snippets: </comment>");
@@ -63,6 +74,6 @@ class GherkinSnippets extends Command
         $output->writeln("<info> ----------------------------------------- </info>");
         $output->writeln(sprintf(' <bold>%d</bold> snippets proposed', count($snippets)));
         $output->writeln("<notice> Copy generated snippets to {$config['actor']} or a specific Gherkin context </notice>");
-        return Command::SUCCESS;
+        return 0;
     }
 }

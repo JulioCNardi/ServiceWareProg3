@@ -8,72 +8,101 @@ namespace Codeception\Lib\Connector\Shared;
  * Converts BrowserKit\Request's request parameters and files into PHP-compatible structure
  *
  * @see https://bugs.php.net/bug.php?id=25589
- * @see https://bugs.php.net/bug.php?id=40000
+ * @see https://bugs.php.net/bug.php?id=25589
  *
  * @package Codeception\Lib\Connector
  */
 trait PhpSuperGlobalsConverter
 {
     /**
-     * Rearrange files array to match PHP $_FILES structure.
-     * Handles nested arrays within files, ensuring compatibility with PHP's $_FILES superglobal.
+     * Rearrange files array to be compatible with PHP $_FILES superglobal structure
+     * @see https://bugs.php.net/bug.php?id=25589
      */
     protected function remapFiles(array $requestFiles): array
     {
-        $normalizedFiles = $this->normalizeFilesArray($requestFiles);
-        return $this->normalizeQueryParameters($normalizedFiles);
+        $files = $this->rearrangeFiles($requestFiles);
+
+        return $this->replaceSpaces($files);
     }
 
     /**
-     * Normalize request parameters by replacing spaces and special characters.
-     * Ensures compatibility with PHP's handling of query parameters.
+     * Escape high-level variable name with dots, underscores and other "special" chars
+     * to be compatible with PHP "bug"
+     * @see https://bugs.php.net/bug.php?id=40000
      */
     protected function remapRequestParameters(array $parameters): array
     {
-        return $this->normalizeQueryParameters($parameters);
+        return $this->replaceSpaces($parameters);
     }
 
-    private function normalizeFilesArray(array $requestFiles): array
+    private function rearrangeFiles(array $requestFiles): array
     {
-        $normalizedFiles = [];
-        foreach ($requestFiles as $fieldName => $fileInfo) {
-            if (!is_array($fileInfo)) {
+        $files = [];
+        foreach ($requestFiles as $name => $info) {
+            if (!is_array($info)) {
                 continue;
             }
 
-            // Check if the current file info has nested arrays within its keys
-            $containsNestedArrays = count(array_filter($fileInfo, 'is_array'));
+            /**
+             * If we have a form with fields like
+             * ```
+             * <input type="file" name="foo" />
+             * <input type="file" name="foo[bar]" />
+             * ```
+             * then only array variable will be used while simple variable will be ignored in php $_FILES
+             * (eg $_FILES = [
+             *                 foo => [
+             *                     tmp_name => [
+             *                         'bar' => 'asdf'
+             *                     ],
+             *                     //...
+             *                ]
+             *              ]
+             * )
+             * (notice there is no entry for file "foo", only for file "foo[bar]"
+             * this will check if current element contains inner arrays within it's keys
+             * so we can ignore element itself and only process inner files
+             */
+            $hasInnerArrays = count(array_filter($info, 'is_array'));
 
-            if ($containsNestedArrays || !isset($fileInfo['tmp_name'])) {
-                $nestedFiles = $this->remapFiles($fileInfo);
-                // Convert from ['a' => ['tmp_name' => '/tmp/test.txt'] ]
-                // to ['tmp_name' => ['a' => '/tmp/test.txt'] ]
-                foreach ($nestedFiles as $nestedFieldName => $nestedFileInfo) {
-                    $nestedFileInfo = array_map(
-                        fn($value): array => [$nestedFieldName => $value],
-                        $nestedFileInfo
+            if ($hasInnerArrays || !isset($info['tmp_name'])) {
+                $inner = $this->remapFiles($info);
+                foreach ($inner as $innerName => $innerInfo) {
+                    /**
+                     * Convert from ['a' => ['tmp_name' => '/tmp/test.txt'] ]
+                     * to ['tmp_name' => ['a' => '/tmp/test.txt'] ]
+                     */
+                    $innerInfo = array_map(
+                        fn ($v) => [$innerName => $v],
+                        $innerInfo
                     );
 
-                    $normalizedFiles[$fieldName] = array_replace_recursive(
-                        $normalizedFiles[$fieldName] ?? [],
-                        $nestedFileInfo
-                    );
+                    if (empty($files[$name])) {
+                        $files[$name] = [];
+                    }
+
+                    $files[$name] = array_replace_recursive($files[$name], $innerInfo);
                 }
             } else {
-                $normalizedFiles[$fieldName] = $fileInfo;
+                $files[$name] = $info;
             }
         }
 
-        return $normalizedFiles;
+        return $files;
     }
 
     /**
-     * Normalize query parameters by replacing spaces and special characters.
-     * Ensures compatibility with PHP's handling of query strings.
+     * Replace spaces and dots and other chars in high-level query parameters for
+     * compatibility with PHP bug (or not a bug)
+     * @see https://bugs.php.net/bug.php?id=40000
+     *
+     * @param array $parameters Array of request parameters to be converted
      */
-    private function normalizeQueryParameters(array $parameters): array
+    private function replaceSpaces(array $parameters): array
     {
-        parse_str(http_build_query($parameters), $normalizedParameters);
-        return $normalizedParameters;
+        $qs = http_build_query($parameters);
+        parse_str($qs, $output);
+
+        return $output;
     }
 }

@@ -78,7 +78,7 @@ abstract class Snapshot
     protected function getFileName(): string
     {
         if (!$this->fileName) {
-            $this->fileName = preg_replace('#\W#', '.', static::class) . '.' . $this->extension;
+            $this->fileName = preg_replace('#\W#', '.', $this::class) . '.' . $this->extension;
         }
         return codecept_data_dir() . $this->fileName;
     }
@@ -168,6 +168,6 @@ abstract class Snapshot
 
     private function printDebug(string $message): void
     {
-        Debug::debug(static::class . ': ' . $message);
+        Debug::debug($this::class . ': ' . $message);
     }
 }

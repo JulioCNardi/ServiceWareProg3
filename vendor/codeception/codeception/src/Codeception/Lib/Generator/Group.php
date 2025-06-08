@@ -50,6 +50,8 @@ EOF;
 
     public function __construct(protected array $settings, protected string $name)
     {
+        $this->settings = $settings;
+        $this->name = $name;
         $this->namespace = $this->getNamespaceString($this->supportNamespace() . '\\Group\\' . $name);
     }
 

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @link https://www.yiiframework.com/
  * @copyright Copyright (c) 2008 Yii Software LLC
@@ -20,13 +19,13 @@ class BootstrapPluginAsset extends AssetBundle
     /**
      * @inheritDoc
      */
-    public $sourcePath = '@bower/bootstrap/dist';
+    public $sourcePath = '@bower/bootstrap';
 
     /**
      * @inheritDoc
      */
     public $js = [
-        'js/bootstrap.bundle.js'
+        'dist/js/bootstrap.bundle.js'
     ];
 
     /**
