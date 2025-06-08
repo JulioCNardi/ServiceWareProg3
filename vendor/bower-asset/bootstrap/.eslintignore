@@ -2,7 +2,8 @@
 **/dist/
 **/vendor/
 /_site/
+/site/public/
 /js/coverage/
-/js/tests/integration/
 /site/static/sw.js
-/site/layouts/
+/site/static/docs/**/assets/sw.js
+/site/layouts/partials/
