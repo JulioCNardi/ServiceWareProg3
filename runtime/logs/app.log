@@ -144,3 +144,812 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1749596965.359
     'REQUEST_TIME' => 1749596965
 ]
+2025-06-10 23:48:01 [::1][-][mej2n5sht2i8a0qf7u5uffoi1j][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: idProduto in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Controller.php:199
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('view', Array)
+#3 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('produto/view', Array)
+#4 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2025-06-10 23:48:01 [::1][-][mej2n5sht2i8a0qf7u5uffoi1j][info][application] $_GET = [
+    'r' => 'produto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    '_csrf' => '74882179b208c54fa98b251791fe44059a92ddd9231cbf21dc0cb8ba165a38eaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_L8fw1i1dGfCM-hCfG2Q8uhvHt0-KvV4\";}'
+    'PHPSESSID' => 'mej2n5sht2i8a0qf7u5uffoi1j'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; _csrf=74882179b208c54fa98b251791fe44059a92ddd9231cbf21dc0cb8ba165a38eaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_L8fw1i1dGfCM-hCfG2Q8uhvHt0-KvV4%22%3B%7D; PHPSESSID=mej2n5sht2i8a0qf7u5uffoi1j'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '54172'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=produto/view&id=1'
+    'REQUEST_URI' => '/ServiceWareProg3/web/index.php?r=produto/view&id=1'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1749599281.484
+    'REQUEST_TIME' => 1749599281
+]
+2025-06-10 23:48:13 [::1][-][mej2n5sht2i8a0qf7u5uffoi1j][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: idProduto in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Controller.php:199
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('view', Array)
+#3 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('produto/view', Array)
+#4 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2025-06-10 23:48:13 [::1][-][mej2n5sht2i8a0qf7u5uffoi1j][info][application] $_GET = [
+    'r' => 'produto/view'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    '_csrf' => '74882179b208c54fa98b251791fe44059a92ddd9231cbf21dc0cb8ba165a38eaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_L8fw1i1dGfCM-hCfG2Q8uhvHt0-KvV4\";}'
+    'PHPSESSID' => 'mej2n5sht2i8a0qf7u5uffoi1j'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; _csrf=74882179b208c54fa98b251791fe44059a92ddd9231cbf21dc0cb8ba165a38eaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_L8fw1i1dGfCM-hCfG2Q8uhvHt0-KvV4%22%3B%7D; PHPSESSID=mej2n5sht2i8a0qf7u5uffoi1j'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '54181'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=produto/view'
+    'REQUEST_URI' => '/ServiceWareProg3/web/index.php?r=produto/view'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1749599293.1921
+    'REQUEST_TIME' => 1749599293
+]
+2025-06-10 23:48:17 [::1][-][mej2n5sht2i8a0qf7u5uffoi1j][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: idProduto in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Controller.php:199
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('view', Array)
+#3 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('produto/view', Array)
+#4 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2025-06-10 23:48:17 [::1][-][mej2n5sht2i8a0qf7u5uffoi1j][info][application] $_GET = [
+    'r' => 'produto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    '_csrf' => '74882179b208c54fa98b251791fe44059a92ddd9231cbf21dc0cb8ba165a38eaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_L8fw1i1dGfCM-hCfG2Q8uhvHt0-KvV4\";}'
+    'PHPSESSID' => 'mej2n5sht2i8a0qf7u5uffoi1j'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; _csrf=74882179b208c54fa98b251791fe44059a92ddd9231cbf21dc0cb8ba165a38eaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_L8fw1i1dGfCM-hCfG2Q8uhvHt0-KvV4%22%3B%7D; PHPSESSID=mej2n5sht2i8a0qf7u5uffoi1j'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '54183'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=produto/view&id=1'
+    'REQUEST_URI' => '/ServiceWareProg3/web/index.php?r=produto/view&id=1'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1749599297.4079
+    'REQUEST_TIME' => 1749599297
+]
+2025-06-10 23:48:19 [::1][-][mej2n5sht2i8a0qf7u5uffoi1j][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: idProduto in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Controller.php:199
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('view', Array)
+#3 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('produto/view', Array)
+#4 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2025-06-10 23:48:19 [::1][-][mej2n5sht2i8a0qf7u5uffoi1j][info][application] $_GET = [
+    'r' => 'produto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    '_csrf' => '74882179b208c54fa98b251791fe44059a92ddd9231cbf21dc0cb8ba165a38eaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_L8fw1i1dGfCM-hCfG2Q8uhvHt0-KvV4\";}'
+    'PHPSESSID' => 'mej2n5sht2i8a0qf7u5uffoi1j'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; _csrf=74882179b208c54fa98b251791fe44059a92ddd9231cbf21dc0cb8ba165a38eaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_L8fw1i1dGfCM-hCfG2Q8uhvHt0-KvV4%22%3B%7D; PHPSESSID=mej2n5sht2i8a0qf7u5uffoi1j'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '54185'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=produto/view&id=1'
+    'REQUEST_URI' => '/ServiceWareProg3/web/index.php?r=produto/view&id=1'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1749599299.6827
+    'REQUEST_TIME' => 1749599299
+]
+2025-06-10 23:49:02 [::1][-][mej2n5sht2i8a0qf7u5uffoi1j][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: idProduto in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Controller.php:199
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('view', Array)
+#3 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('produto/view', Array)
+#4 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2025-06-10 23:49:02 [::1][-][mej2n5sht2i8a0qf7u5uffoi1j][info][application] $_GET = [
+    'r' => 'produto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    '_csrf' => '74882179b208c54fa98b251791fe44059a92ddd9231cbf21dc0cb8ba165a38eaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_L8fw1i1dGfCM-hCfG2Q8uhvHt0-KvV4\";}'
+    'PHPSESSID' => 'mej2n5sht2i8a0qf7u5uffoi1j'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; _csrf=74882179b208c54fa98b251791fe44059a92ddd9231cbf21dc0cb8ba165a38eaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_L8fw1i1dGfCM-hCfG2Q8uhvHt0-KvV4%22%3B%7D; PHPSESSID=mej2n5sht2i8a0qf7u5uffoi1j'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '54193'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=produto/view&id=1'
+    'REQUEST_URI' => '/ServiceWareProg3/web/index.php?r=produto/view&id=1'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1749599342.5013
+    'REQUEST_TIME' => 1749599342
+]
+2025-06-10 23:49:03 [::1][-][mej2n5sht2i8a0qf7u5uffoi1j][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: idProduto in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Controller.php:199
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('view', Array)
+#3 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('produto/view', Array)
+#4 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2025-06-10 23:49:03 [::1][-][mej2n5sht2i8a0qf7u5uffoi1j][info][application] $_GET = [
+    'r' => 'produto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    '_csrf' => '74882179b208c54fa98b251791fe44059a92ddd9231cbf21dc0cb8ba165a38eaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_L8fw1i1dGfCM-hCfG2Q8uhvHt0-KvV4\";}'
+    'PHPSESSID' => 'mej2n5sht2i8a0qf7u5uffoi1j'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; _csrf=74882179b208c54fa98b251791fe44059a92ddd9231cbf21dc0cb8ba165a38eaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_L8fw1i1dGfCM-hCfG2Q8uhvHt0-KvV4%22%3B%7D; PHPSESSID=mej2n5sht2i8a0qf7u5uffoi1j'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '54195'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=produto/view&id=1'
+    'REQUEST_URI' => '/ServiceWareProg3/web/index.php?r=produto/view&id=1'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1749599343.8366
+    'REQUEST_TIME' => 1749599343
+]
+2025-06-10 23:49:07 [::1][-][mej2n5sht2i8a0qf7u5uffoi1j][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: idProduto in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Controller.php:199
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('view', Array)
+#3 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('produto/view', Array)
+#4 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2025-06-10 23:49:07 [::1][-][mej2n5sht2i8a0qf7u5uffoi1j][info][application] $_GET = [
+    'r' => 'produto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    '_csrf' => '74882179b208c54fa98b251791fe44059a92ddd9231cbf21dc0cb8ba165a38eaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_L8fw1i1dGfCM-hCfG2Q8uhvHt0-KvV4\";}'
+    'PHPSESSID' => 'mej2n5sht2i8a0qf7u5uffoi1j'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; _csrf=74882179b208c54fa98b251791fe44059a92ddd9231cbf21dc0cb8ba165a38eaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_L8fw1i1dGfCM-hCfG2Q8uhvHt0-KvV4%22%3B%7D; PHPSESSID=mej2n5sht2i8a0qf7u5uffoi1j'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '54196'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=produto/view&id=1'
+    'REQUEST_URI' => '/ServiceWareProg3/web/index.php?r=produto/view&id=1'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1749599347.0282
+    'REQUEST_TIME' => 1749599347
+]
+2025-06-10 23:49:07 [::1][-][mej2n5sht2i8a0qf7u5uffoi1j][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: idProduto in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Controller.php:199
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('view', Array)
+#3 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('produto/view', Array)
+#4 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2025-06-10 23:49:07 [::1][-][mej2n5sht2i8a0qf7u5uffoi1j][info][application] $_GET = [
+    'r' => 'produto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    '_csrf' => '74882179b208c54fa98b251791fe44059a92ddd9231cbf21dc0cb8ba165a38eaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_L8fw1i1dGfCM-hCfG2Q8uhvHt0-KvV4\";}'
+    'PHPSESSID' => 'mej2n5sht2i8a0qf7u5uffoi1j'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; _csrf=74882179b208c54fa98b251791fe44059a92ddd9231cbf21dc0cb8ba165a38eaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_L8fw1i1dGfCM-hCfG2Q8uhvHt0-KvV4%22%3B%7D; PHPSESSID=mej2n5sht2i8a0qf7u5uffoi1j'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '54197'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=produto/view&id=1'
+    'REQUEST_URI' => '/ServiceWareProg3/web/index.php?r=produto/view&id=1'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1749599347.6761
+    'REQUEST_TIME' => 1749599347
+]
+2025-06-10 23:49:07 [::1][-][mej2n5sht2i8a0qf7u5uffoi1j][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: idProduto in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Controller.php:199
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('view', Array)
+#3 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('produto/view', Array)
+#4 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2025-06-10 23:49:07 [::1][-][mej2n5sht2i8a0qf7u5uffoi1j][info][application] $_GET = [
+    'r' => 'produto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    '_csrf' => '74882179b208c54fa98b251791fe44059a92ddd9231cbf21dc0cb8ba165a38eaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_L8fw1i1dGfCM-hCfG2Q8uhvHt0-KvV4\";}'
+    'PHPSESSID' => 'mej2n5sht2i8a0qf7u5uffoi1j'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; _csrf=74882179b208c54fa98b251791fe44059a92ddd9231cbf21dc0cb8ba165a38eaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_L8fw1i1dGfCM-hCfG2Q8uhvHt0-KvV4%22%3B%7D; PHPSESSID=mej2n5sht2i8a0qf7u5uffoi1j'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '54198'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=produto/view&id=1'
+    'REQUEST_URI' => '/ServiceWareProg3/web/index.php?r=produto/view&id=1'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1749599347.955
+    'REQUEST_TIME' => 1749599347
+]
+2025-06-10 23:49:08 [::1][-][mej2n5sht2i8a0qf7u5uffoi1j][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: idProduto in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Controller.php:199
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('view', Array)
+#3 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('produto/view', Array)
+#4 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2025-06-10 23:49:08 [::1][-][mej2n5sht2i8a0qf7u5uffoi1j][info][application] $_GET = [
+    'r' => 'produto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    '_csrf' => '74882179b208c54fa98b251791fe44059a92ddd9231cbf21dc0cb8ba165a38eaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_L8fw1i1dGfCM-hCfG2Q8uhvHt0-KvV4\";}'
+    'PHPSESSID' => 'mej2n5sht2i8a0qf7u5uffoi1j'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; _csrf=74882179b208c54fa98b251791fe44059a92ddd9231cbf21dc0cb8ba165a38eaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_L8fw1i1dGfCM-hCfG2Q8uhvHt0-KvV4%22%3B%7D; PHPSESSID=mej2n5sht2i8a0qf7u5uffoi1j'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '54199'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=produto/view&id=1'
+    'REQUEST_URI' => '/ServiceWareProg3/web/index.php?r=produto/view&id=1'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1749599348.1475
+    'REQUEST_TIME' => 1749599348
+]
+2025-06-10 23:49:08 [::1][-][mej2n5sht2i8a0qf7u5uffoi1j][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: idProduto in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Controller.php:199
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('view', Array)
+#3 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('produto/view', Array)
+#4 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2025-06-10 23:49:08 [::1][-][mej2n5sht2i8a0qf7u5uffoi1j][info][application] $_GET = [
+    'r' => 'produto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    '_csrf' => '74882179b208c54fa98b251791fe44059a92ddd9231cbf21dc0cb8ba165a38eaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_L8fw1i1dGfCM-hCfG2Q8uhvHt0-KvV4\";}'
+    'PHPSESSID' => 'mej2n5sht2i8a0qf7u5uffoi1j'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; _csrf=74882179b208c54fa98b251791fe44059a92ddd9231cbf21dc0cb8ba165a38eaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_L8fw1i1dGfCM-hCfG2Q8uhvHt0-KvV4%22%3B%7D; PHPSESSID=mej2n5sht2i8a0qf7u5uffoi1j'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '54200'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=produto/view&id=1'
+    'REQUEST_URI' => '/ServiceWareProg3/web/index.php?r=produto/view&id=1'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1749599348.3166
+    'REQUEST_TIME' => 1749599348
+]
