@@ -5,10 +5,7 @@ use yii\helpers\Html;
 /** @var yii\web\View $this */
 /** @var app\models\Veiculo $model */
 
-$this->title = 'Update Veiculo: ' . $model->idVeiculo;
-$this->params['breadcrumbs'][] = ['label' => 'Veiculos', 'url' => ['index']];
-$this->params['breadcrumbs'][] = ['label' => $model->idVeiculo, 'url' => ['view', 'idVeiculo' => $model->idVeiculo]];
-$this->params['breadcrumbs'][] = 'Update';
+$this->title = 'Alterar Veiculo: ' . $model->idVeiculo;
 ?>
 <div class="veiculo-update">
 

@@ -5,9 +5,8 @@ use yii\helpers\Html;
 /** @var yii\web\View $this */
 /** @var app\models\Ordem $model */
 
-$this->title = 'Create Ordem';
-$this->params['breadcrumbs'][] = ['label' => 'Ordems', 'url' => ['index']];
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = 'Nova Ordem';
+
 ?>
 <div class="ordem-create">
 

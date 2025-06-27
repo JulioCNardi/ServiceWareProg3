@@ -50,11 +50,11 @@ class Cliente extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'idCliente' => 'Id Cliente',
+            'idCliente' => 'Código do Cliente',
             'nome' => 'Nome',
-            'cpf' => 'Cpf',
+            'cpf' => 'CPF',
             'endereco' => 'Endereco',
-            'email' => 'Email',
+            'email' => 'E-mail',
             'telefone' => 'Telefone',
             'cidade' => 'Cidade',
             'numero' => 'Numero',

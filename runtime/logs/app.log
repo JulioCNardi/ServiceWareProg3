@@ -953,3 +953,951 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1749599348.3166
     'REQUEST_TIME' => 1749599348
 ]
+2025-06-25 22:54:07 [::1][-][b2susfqo22r67frud9qa2bgfan][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: The requested page does not exist. in C:\laragon\www\ServiceWareProg3\controllers\ProdutoController.php:132
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\controllers\ProdutoController.php(59): app\controllers\ProdutoController->findModel('1')
+#1 [internal function]: app\controllers\ProdutoController->actionView('1')
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#4 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('view', Array)
+#5 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('produto/view', Array)
+#6 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2025-06-25 22:54:05 [::1][-][b2susfqo22r67frud9qa2bgfan][info][application] $_GET = [
+    'r' => 'produto/view'
+    'idProduto' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Git\\cmd;C:\\Users\\Jandir\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '57552'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=produto/view&idProduto=1'
+    'REQUEST_URI' => '/ServiceWareProg3/web/index.php?r=produto/view&idProduto=1'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1750892044.8691
+    'REQUEST_TIME' => 1750892044
+]
+2025-06-25 23:33:30 [::1][-][b2susfqo22r67frud9qa2bgfan][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "index". in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('index', Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2025-06-25 23:33:30 [::1][-][b2susfqo22r67frud9qa2bgfan][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'b2susfqo22r67frud9qa2bgfan'
+    '_csrf' => '6fd261af1fb2bdeb4468a604a63876fee6fad9ef5fcf139ed9d8158d694be226a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7hQVwZU8cSNT4KEF0XWGNdQz33tMR1lz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'bibojat'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=b2susfqo22r67frud9qa2bgfan; _csrf=6fd261af1fb2bdeb4468a604a63876fee6fad9ef5fcf139ed9d8158d694be226a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227hQVwZU8cSNT4KEF0XWGNdQz33tMR1lz%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Git\\cmd;C:\\Users\\Jandir\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '57789'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/index'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1750894410.7576
+    'REQUEST_TIME' => 1750894410
+]
+2025-06-27 22:54:18 [::1][-][9ighrsb8uoqp4ghv9q0ffq1h9j][error][ParseError] ParseError: syntax error, unexpected token "<", expecting end of file in C:\laragon\www\ServiceWareProg3\controllers\SiteController.php:5
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(661): class_exists('app\\controllers...')
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(620): yii\base\Module->createControllerByID('site')
+#3 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(546): yii\base\Module->createController('')
+#4 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#5 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#7 {main}
+2025-06-27 22:54:18 [::1][-][9ighrsb8uoqp4ghv9q0ffq1h9j][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '9ighrsb8uoqp4ghv9q0ffq1h9j'
+    '_csrf' => '61dc10c2126b7219f1e4821049e1987fec84a8f8e44a7b85c000540d25a86ecfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"K9prbU1Nr2z7N1_hNS4j5yLFYwtnnv2e\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/ServiceWareProg3/web/cliente'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=9ighrsb8uoqp4ghv9q0ffq1h9j; _csrf=61dc10c2126b7219f1e4821049e1987fec84a8f8e44a7b85c000540d25a86ecfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22K9prbU1Nr2z7N1_hNS4j5yLFYwtnnv2e%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Git\\cmd;C:\\Users\\Jandir\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Jandir\\AppData\\Local\\Programs\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '50146'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751064858.5772
+    'REQUEST_TIME' => 1751064858
+]
+2025-06-27 23:01:25 [::1][-][9ighrsb8uoqp4ghv9q0ffq1h9j][error][yii\db\Exception] PDOException: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '21/01/1999' for column 'dataAbertura' at row 1 in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\db\Command.php:1320
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\db\Command.php(1320): PDOStatement->execute()
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\db\Command.php(1120): yii\db\Command->internalExecute('INSERT INTO `or...')
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\db\Schema.php(431): yii\db\Command->execute()
+#3 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\db\ActiveRecord.php(604): yii\db\Schema->insert('ordem', Array)
+#4 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\db\ActiveRecord.php(570): yii\db\ActiveRecord->insertInternal(NULL)
+#5 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\db\BaseActiveRecord.php(688): yii\db\ActiveRecord->insert(true, NULL)
+#6 C:\laragon\www\ServiceWareProg3\controllers\OrdemController.php(73): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\controllers\OrdemController->actionCreate()
+#8 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#10 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('create', Array)
+#11 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('ordem/create', Array)
+#12 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\Exception: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '21/01/1999' for column 'dataAbertura' at row 1
+The SQL being executed was: INSERT INTO `ordem` (`dataAbertura`, `dataFechamento`, `observacao`, `idCliente`) VALUES ('21/01/1999', '10/01/2000', 'teste', 1) in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\db\Schema.php:676
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\db\Command.php(1325): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `or...')
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\db\Command.php(1120): yii\db\Command->internalExecute('INSERT INTO `or...')
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\db\Schema.php(431): yii\db\Command->execute()
+#3 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\db\ActiveRecord.php(604): yii\db\Schema->insert('ordem', Array)
+#4 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\db\ActiveRecord.php(570): yii\db\ActiveRecord->insertInternal(NULL)
+#5 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\db\BaseActiveRecord.php(688): yii\db\ActiveRecord->insert(true, NULL)
+#6 C:\laragon\www\ServiceWareProg3\controllers\OrdemController.php(73): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\controllers\OrdemController->actionCreate()
+#8 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#10 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('create', Array)
+#11 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('ordem/create', Array)
+#12 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 22007
+    [1] => 1292
+    [2] => Incorrect date value: '21/01/1999' for column 'dataAbertura' at row 1
+)
+
+2025-06-27 23:01:25 [::1][-][9ighrsb8uoqp4ghv9q0ffq1h9j][info][application] $_GET = []
+
+$_POST = [
+    '_csrf' => '5yxqnGNoSgSuiNowbwmkI3TormK1upEht_CXID087DisFRruAT17Sty6oAchOPtLOruaCIDD3Wfuh-NOU0reXQ=='
+    'Ordem' => [
+        'dataAbertura' => '21/01/1999'
+        'dataFechamento' => '10/01/2000'
+        'observacao' => 'teste'
+        'idCliente' => '1'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '9ighrsb8uoqp4ghv9q0ffq1h9j'
+    '_csrf' => '61dc10c2126b7219f1e4821049e1987fec84a8f8e44a7b85c000540d25a86ecfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"K9prbU1Nr2z7N1_hNS4j5yLFYwtnnv2e\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '229'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/ServiceWareProg3/web/ordem/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=9ighrsb8uoqp4ghv9q0ffq1h9j; _csrf=61dc10c2126b7219f1e4821049e1987fec84a8f8e44a7b85c000540d25a86ecfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22K9prbU1Nr2z7N1_hNS4j5yLFYwtnnv2e%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Git\\cmd;C:\\Users\\Jandir\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Jandir\\AppData\\Local\\Programs\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '50233'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/ordem/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/ordem/create'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751065285.8763
+    'REQUEST_TIME' => 1751065285
+]
+2025-06-27 23:02:10 [::1][-][9ighrsb8uoqp4ghv9q0ffq1h9j][error][yii\db\Exception] PDOException: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '21:01:1999' for column 'dataAbertura' at row 1 in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\db\Command.php:1320
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\db\Command.php(1320): PDOStatement->execute()
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\db\Command.php(1120): yii\db\Command->internalExecute('INSERT INTO `or...')
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\db\Schema.php(431): yii\db\Command->execute()
+#3 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\db\ActiveRecord.php(604): yii\db\Schema->insert('ordem', Array)
+#4 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\db\ActiveRecord.php(570): yii\db\ActiveRecord->insertInternal(NULL)
+#5 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\db\BaseActiveRecord.php(688): yii\db\ActiveRecord->insert(true, NULL)
+#6 C:\laragon\www\ServiceWareProg3\controllers\OrdemController.php(73): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\controllers\OrdemController->actionCreate()
+#8 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#10 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('create', Array)
+#11 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('ordem/create', Array)
+#12 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\Exception: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '21:01:1999' for column 'dataAbertura' at row 1
+The SQL being executed was: INSERT INTO `ordem` (`dataAbertura`, `dataFechamento`, `observacao`, `idCliente`) VALUES ('21:01:1999', '10:01:2000', 'teste', 1) in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\db\Schema.php:676
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\db\Command.php(1325): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `or...')
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\db\Command.php(1120): yii\db\Command->internalExecute('INSERT INTO `or...')
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\db\Schema.php(431): yii\db\Command->execute()
+#3 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\db\ActiveRecord.php(604): yii\db\Schema->insert('ordem', Array)
+#4 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\db\ActiveRecord.php(570): yii\db\ActiveRecord->insertInternal(NULL)
+#5 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\db\BaseActiveRecord.php(688): yii\db\ActiveRecord->insert(true, NULL)
+#6 C:\laragon\www\ServiceWareProg3\controllers\OrdemController.php(73): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\controllers\OrdemController->actionCreate()
+#8 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#10 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('create', Array)
+#11 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('ordem/create', Array)
+#12 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 22007
+    [1] => 1292
+    [2] => Incorrect date value: '21:01:1999' for column 'dataAbertura' at row 1
+)
+
+2025-06-27 23:02:10 [::1][-][9ighrsb8uoqp4ghv9q0ffq1h9j][info][application] $_GET = []
+
+$_POST = [
+    '_csrf' => 'CigzItezi0tXF1AUj9_50rW-MZdu0QO9LO8y9omggKBBEUNQtea6BSUlKiPB7qa6--0F_VuoT_t1mEaY59ayxQ=='
+    'Ordem' => [
+        'dataAbertura' => '21:01:1999'
+        'dataFechamento' => '10:01:2000'
+        'observacao' => 'teste'
+        'idCliente' => '1'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '9ighrsb8uoqp4ghv9q0ffq1h9j'
+    '_csrf' => '61dc10c2126b7219f1e4821049e1987fec84a8f8e44a7b85c000540d25a86ecfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"K9prbU1Nr2z7N1_hNS4j5yLFYwtnnv2e\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '229'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/ServiceWareProg3/web/ordem/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=9ighrsb8uoqp4ghv9q0ffq1h9j; _csrf=61dc10c2126b7219f1e4821049e1987fec84a8f8e44a7b85c000540d25a86ecfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22K9prbU1Nr2z7N1_hNS4j5yLFYwtnnv2e%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Git\\cmd;C:\\Users\\Jandir\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Jandir\\AppData\\Local\\Programs\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '50244'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/ordem/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/ordem/create'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751065330.6224
+    'REQUEST_TIME' => 1751065330
+]
+2025-06-27 23:05:26 [::1][-][9ighrsb8uoqp4ghv9q0ffq1h9j][error][yii\base\UnknownMethodException] yii\base\UnknownMethodException: Calling unknown method: yii\widgets\ActiveField::date_date_set() in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php:312
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\views\ordem\_form.php(15): yii\base\Component->__call('date_date_set', Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(348): require('C:\\laragon\\www\\...')
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\laragon\\www\\...', Array)
+#3 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\laragon\\www\\...', Array, NULL)
+#4 C:\laragon\www\ServiceWareProg3\views\ordem\create.php(17): yii\base\View->render('_form', Array)
+#5 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(348): require('C:\\laragon\\www\\...')
+#6 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\laragon\\www\\...', Array)
+#7 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\laragon\\www\\...', Array, Object(app\controllers\OrdemController))
+#8 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('create', Array, Object(app\controllers\OrdemController))
+#9 C:\laragon\www\ServiceWareProg3\controllers\OrdemController.php(81): yii\base\Controller->render('create', Array)
+#10 [internal function]: app\controllers\OrdemController->actionCreate()
+#11 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#13 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('create', Array)
+#14 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('ordem/create', Array)
+#15 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2025-06-27 23:05:26 [::1][-][9ighrsb8uoqp4ghv9q0ffq1h9j][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '9ighrsb8uoqp4ghv9q0ffq1h9j'
+    '_csrf' => '61dc10c2126b7219f1e4821049e1987fec84a8f8e44a7b85c000540d25a86ecfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"K9prbU1Nr2z7N1_hNS4j5yLFYwtnnv2e\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/ServiceWareProg3/web/ordens'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=9ighrsb8uoqp4ghv9q0ffq1h9j; _csrf=61dc10c2126b7219f1e4821049e1987fec84a8f8e44a7b85c000540d25a86ecfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22K9prbU1Nr2z7N1_hNS4j5yLFYwtnnv2e%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Git\\cmd;C:\\Users\\Jandir\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Jandir\\AppData\\Local\\Programs\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '50269'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/ordem/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/ordem/create'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751065526.5899
+    'REQUEST_TIME' => 1751065526
+]
+2025-06-27 23:05:35 [::1][-][9ighrsb8uoqp4ghv9q0ffq1h9j][error][yii\base\UnknownMethodException] yii\base\UnknownMethodException: Calling unknown method: yii\widgets\ActiveField::date_date_set() in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php:312
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\views\ordem\_form.php(15): yii\base\Component->__call('date_date_set', Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(348): require('C:\\laragon\\www\\...')
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\laragon\\www\\...', Array)
+#3 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\laragon\\www\\...', Array, NULL)
+#4 C:\laragon\www\ServiceWareProg3\views\ordem\create.php(17): yii\base\View->render('_form', Array)
+#5 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(348): require('C:\\laragon\\www\\...')
+#6 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\laragon\\www\\...', Array)
+#7 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\laragon\\www\\...', Array, Object(app\controllers\OrdemController))
+#8 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('create', Array, Object(app\controllers\OrdemController))
+#9 C:\laragon\www\ServiceWareProg3\controllers\OrdemController.php(81): yii\base\Controller->render('create', Array)
+#10 [internal function]: app\controllers\OrdemController->actionCreate()
+#11 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#13 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('create', Array)
+#14 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('ordem/create', Array)
+#15 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2025-06-27 23:05:35 [::1][-][9ighrsb8uoqp4ghv9q0ffq1h9j][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '9ighrsb8uoqp4ghv9q0ffq1h9j'
+    '_csrf' => '61dc10c2126b7219f1e4821049e1987fec84a8f8e44a7b85c000540d25a86ecfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"K9prbU1Nr2z7N1_hNS4j5yLFYwtnnv2e\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/ServiceWareProg3/web/ordem'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=9ighrsb8uoqp4ghv9q0ffq1h9j; _csrf=61dc10c2126b7219f1e4821049e1987fec84a8f8e44a7b85c000540d25a86ecfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22K9prbU1Nr2z7N1_hNS4j5yLFYwtnnv2e%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Git\\cmd;C:\\Users\\Jandir\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Jandir\\AppData\\Local\\Programs\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '50273'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/ordem/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/ordem/create'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751065535.9215
+    'REQUEST_TIME' => 1751065535
+]
+2025-06-27 23:05:40 [::1][-][9ighrsb8uoqp4ghv9q0ffq1h9j][error][yii\base\UnknownMethodException] yii\base\UnknownMethodException: Calling unknown method: yii\widgets\ActiveField::date_date_set() in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php:312
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\views\ordem\_form.php(15): yii\base\Component->__call('date_date_set', Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(348): require('C:\\laragon\\www\\...')
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\laragon\\www\\...', Array)
+#3 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\laragon\\www\\...', Array, NULL)
+#4 C:\laragon\www\ServiceWareProg3\views\ordem\create.php(17): yii\base\View->render('_form', Array)
+#5 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(348): require('C:\\laragon\\www\\...')
+#6 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\laragon\\www\\...', Array)
+#7 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\laragon\\www\\...', Array, Object(app\controllers\OrdemController))
+#8 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('create', Array, Object(app\controllers\OrdemController))
+#9 C:\laragon\www\ServiceWareProg3\controllers\OrdemController.php(81): yii\base\Controller->render('create', Array)
+#10 [internal function]: app\controllers\OrdemController->actionCreate()
+#11 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#13 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('create', Array)
+#14 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('ordem/create', Array)
+#15 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2025-06-27 23:05:40 [::1][-][9ighrsb8uoqp4ghv9q0ffq1h9j][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '9ighrsb8uoqp4ghv9q0ffq1h9j'
+    '_csrf' => '61dc10c2126b7219f1e4821049e1987fec84a8f8e44a7b85c000540d25a86ecfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"K9prbU1Nr2z7N1_hNS4j5yLFYwtnnv2e\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/ServiceWareProg3/web/ordem'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=9ighrsb8uoqp4ghv9q0ffq1h9j; _csrf=61dc10c2126b7219f1e4821049e1987fec84a8f8e44a7b85c000540d25a86ecfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22K9prbU1Nr2z7N1_hNS4j5yLFYwtnnv2e%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Git\\cmd;C:\\Users\\Jandir\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Jandir\\AppData\\Local\\Programs\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '50277'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/ordem/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/ordem/create'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751065540.4319
+    'REQUEST_TIME' => 1751065540
+]
+2025-06-27 23:11:45 [::1][-][9ighrsb8uoqp4ghv9q0ffq1h9j][error][Error] Error: Class "kartik\date\DatePicker" not found in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\widgets\ActiveField.php:795
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\views\ordem\_form.php(18): yii\widgets\ActiveField->widget('kartik\\date\\Dat...', Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(348): require('C:\\laragon\\www\\...')
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\laragon\\www\\...', Array)
+#3 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\laragon\\www\\...', Array, NULL)
+#4 C:\laragon\www\ServiceWareProg3\views\ordem\create.php(17): yii\base\View->render('_form', Array)
+#5 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(348): require('C:\\laragon\\www\\...')
+#6 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\laragon\\www\\...', Array)
+#7 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\laragon\\www\\...', Array, Object(app\controllers\OrdemController))
+#8 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('create', Array, Object(app\controllers\OrdemController))
+#9 C:\laragon\www\ServiceWareProg3\controllers\OrdemController.php(81): yii\base\Controller->render('create', Array)
+#10 [internal function]: app\controllers\OrdemController->actionCreate()
+#11 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#13 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('create', Array)
+#14 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('ordem/create', Array)
+#15 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2025-06-27 23:11:45 [::1][-][9ighrsb8uoqp4ghv9q0ffq1h9j][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '9ighrsb8uoqp4ghv9q0ffq1h9j'
+    '_csrf' => '61dc10c2126b7219f1e4821049e1987fec84a8f8e44a7b85c000540d25a86ecfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"K9prbU1Nr2z7N1_hNS4j5yLFYwtnnv2e\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/ServiceWareProg3/web/ordem'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=9ighrsb8uoqp4ghv9q0ffq1h9j; _csrf=61dc10c2126b7219f1e4821049e1987fec84a8f8e44a7b85c000540d25a86ecfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22K9prbU1Nr2z7N1_hNS4j5yLFYwtnnv2e%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Git\\cmd;C:\\Users\\Jandir\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Jandir\\AppData\\Local\\Programs\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '50326'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/ordem/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/ordem/create'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751065905.4121
+    'REQUEST_TIME' => 1751065905
+]
+2025-06-27 23:11:50 [::1][-][9ighrsb8uoqp4ghv9q0ffq1h9j][error][Error] Error: Class "kartik\date\DatePicker" not found in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\widgets\ActiveField.php:795
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\views\ordem\_form.php(18): yii\widgets\ActiveField->widget('kartik\\date\\Dat...', Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(348): require('C:\\laragon\\www\\...')
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\laragon\\www\\...', Array)
+#3 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\laragon\\www\\...', Array, NULL)
+#4 C:\laragon\www\ServiceWareProg3\views\ordem\create.php(17): yii\base\View->render('_form', Array)
+#5 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(348): require('C:\\laragon\\www\\...')
+#6 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\laragon\\www\\...', Array)
+#7 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\laragon\\www\\...', Array, Object(app\controllers\OrdemController))
+#8 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('create', Array, Object(app\controllers\OrdemController))
+#9 C:\laragon\www\ServiceWareProg3\controllers\OrdemController.php(81): yii\base\Controller->render('create', Array)
+#10 [internal function]: app\controllers\OrdemController->actionCreate()
+#11 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#13 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('create', Array)
+#14 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('ordem/create', Array)
+#15 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2025-06-27 23:11:50 [::1][-][9ighrsb8uoqp4ghv9q0ffq1h9j][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '9ighrsb8uoqp4ghv9q0ffq1h9j'
+    '_csrf' => '61dc10c2126b7219f1e4821049e1987fec84a8f8e44a7b85c000540d25a86ecfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"K9prbU1Nr2z7N1_hNS4j5yLFYwtnnv2e\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/ServiceWareProg3/web/ordem'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=9ighrsb8uoqp4ghv9q0ffq1h9j; _csrf=61dc10c2126b7219f1e4821049e1987fec84a8f8e44a7b85c000540d25a86ecfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22K9prbU1Nr2z7N1_hNS4j5yLFYwtnnv2e%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Git\\cmd;C:\\Users\\Jandir\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Jandir\\AppData\\Local\\Programs\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '50328'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/ordem/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/ordem/create'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751065910.8976
+    'REQUEST_TIME' => 1751065910
+]
+2025-06-27 23:18:30 [::1][-][9ighrsb8uoqp4ghv9q0ffq1h9j][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Ordem::observação in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\db\BaseActiveRecord.php(296): yii\base\Component->__get('observa\xC3\xA7\xC3\xA3o')
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\helpers\BaseHtml.php(2291): yii\db\BaseActiveRecord->__get('observa\xC3\xA7\xC3\xA3o')
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\helpers\BaseHtml.php(1383): yii\helpers\BaseHtml::getAttributeValue(Object(app\models\Ordem), 'observa\xC3\xA7\xC3\xA3o')
+#3 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\helpers\BaseHtml.php(1439): yii\helpers\BaseHtml::activeInput('text', Object(app\models\Ordem), 'observa\xC3\xA7\xC3\xA3o', Array)
+#4 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\widgets\ActiveField.php(407): yii\helpers\BaseHtml::activeTextInput(Object(app\models\Ordem), 'observa\xC3\xA7\xC3\xA3o', Array)
+#5 C:\laragon\www\ServiceWareProg3\views\ordem\_form.php(19): yii\widgets\ActiveField->textInput(Array)
+#6 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(348): require('C:\\laragon\\www\\...')
+#7 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\laragon\\www\\...', Array)
+#8 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\laragon\\www\\...', Array, NULL)
+#9 C:\laragon\www\ServiceWareProg3\views\ordem\create.php(17): yii\base\View->render('_form', Array)
+#10 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(348): require('C:\\laragon\\www\\...')
+#11 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\laragon\\www\\...', Array)
+#12 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\laragon\\www\\...', Array, Object(app\controllers\OrdemController))
+#13 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('create', Array, Object(app\controllers\OrdemController))
+#14 C:\laragon\www\ServiceWareProg3\controllers\OrdemController.php(81): yii\base\Controller->render('create', Array)
+#15 [internal function]: app\controllers\OrdemController->actionCreate()
+#16 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#17 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#18 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('create', Array)
+#19 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('ordem/create', Array)
+#20 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#22 {main}
+2025-06-27 23:18:30 [::1][-][9ighrsb8uoqp4ghv9q0ffq1h9j][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '9ighrsb8uoqp4ghv9q0ffq1h9j'
+    '_csrf' => '61dc10c2126b7219f1e4821049e1987fec84a8f8e44a7b85c000540d25a86ecfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"K9prbU1Nr2z7N1_hNS4j5yLFYwtnnv2e\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/ServiceWareProg3/web/ordens'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=9ighrsb8uoqp4ghv9q0ffq1h9j; _csrf=61dc10c2126b7219f1e4821049e1987fec84a8f8e44a7b85c000540d25a86ecfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22K9prbU1Nr2z7N1_hNS4j5yLFYwtnnv2e%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Git\\cmd;C:\\Users\\Jandir\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Jandir\\AppData\\Local\\Programs\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '50382'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/ordem/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/ordem/create'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751066310.4146
+    'REQUEST_TIME' => 1751066310
+]

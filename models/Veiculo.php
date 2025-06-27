@@ -42,7 +42,7 @@ class Veiculo extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'idVeiculo' => 'Id Veiculo',
+            'idVeiculo' => 'Código do Veículo',
             'placa' => 'Placa',
             'modelo' => 'Modelo',
             'ano' => 'Ano',

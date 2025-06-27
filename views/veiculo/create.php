@@ -5,9 +5,7 @@ use yii\helpers\Html;
 /** @var yii\web\View $this */
 /** @var app\models\Veiculo $model */
 
-$this->title = 'Create Veiculo';
-$this->params['breadcrumbs'][] = ['label' => 'Veiculos', 'url' => ['index']];
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = 'Cadastro de Veiculo';
 ?>
 <div class="veiculo-create">
 

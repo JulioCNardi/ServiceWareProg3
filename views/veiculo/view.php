@@ -7,8 +7,6 @@ use yii\widgets\DetailView;
 /** @var app\models\Veiculo $model */
 
 $this->title = $model->idVeiculo;
-$this->params['breadcrumbs'][] = ['label' => 'Veiculos', 'url' => ['index']];
-$this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
 <div class="veiculo-view">

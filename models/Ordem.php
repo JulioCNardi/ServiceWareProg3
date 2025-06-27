@@ -48,11 +48,11 @@ class Ordem extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'idOrdem' => 'Id Ordem',
-            'dataAbertura' => 'Data Abertura',
-            'dataFechamento' => 'Data Fechamento',
-            'observacao' => 'Observacao',
-            'idCliente' => 'Id Cliente',
+            'idOrdem' => 'Código da Ordem',
+            'dataAbertura' => 'Data de abertura',
+            'dataFechamento' => 'Data de fechamento',
+            'observacao' => 'Observação',
+            'idCliente' => 'Código do Cliente',
         ];
     }
 

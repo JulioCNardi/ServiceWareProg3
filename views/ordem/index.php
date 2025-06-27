@@ -10,8 +10,8 @@ use yii\widgets\Pjax;
 /** @var app\models\OrdemSearch $searchModel */
 /** @var yii\data\ActiveDataProvider $dataProvider */
 
-$this->title = 'Ordems';
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = 'Ordens';
+
 ?>
 <div class="ordem-index">
 
@@ -28,8 +28,6 @@ $this->params['breadcrumbs'][] = $this->title;
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
-
             'idOrdem',
             'dataAbertura',
             'dataFechamento',
