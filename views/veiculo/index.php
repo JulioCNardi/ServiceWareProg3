@@ -11,7 +11,6 @@ use yii\widgets\Pjax;
 /** @var yii\data\ActiveDataProvider $dataProvider */
 
 $this->title = 'Veiculos';
-$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="veiculo-index">
 
@@ -28,7 +27,6 @@ $this->params['breadcrumbs'][] = $this->title;
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
 
             'idVeiculo',
             'placa',

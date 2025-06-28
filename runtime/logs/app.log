@@ -1901,3 +1901,917 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1751066310.4146
     'REQUEST_TIME' => 1751066310
 ]
+2025-06-28 19:18:41 [::1][-][b3tpj4famjnqg0hjj7ka21rr61][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/index/produto". in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/index/prod...', Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2025-06-28 19:18:41 [::1][-][b3tpj4famjnqg0hjj7ka21rr61][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    '_csrf' => 'c66d73e7060e73b1f79bd37f70652deb4fdcc13c863c71b76282113e321e2682a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yM6AGRal6sGApgYashlYvW9-S_eZzryU\";}'
+    'PHPSESSID' => 'b3tpj4famjnqg0hjj7ka21rr61'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; _csrf=c66d73e7060e73b1f79bd37f70652deb4fdcc13c863c71b76282113e321e2682a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yM6AGRal6sGApgYashlYvW9-S_eZzryU%22%3B%7D; PHPSESSID=b3tpj4famjnqg0hjj7ka21rr61'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '62566'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/site/index/produto'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/site/index/produto'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751138321.4099
+    'REQUEST_TIME' => 1751138321
+]
+2025-06-28 19:20:51 [::1][-][j83h82nkjrrvm0tv5gc8mh59sa][error][Error] Error: Class "app\controllers\Yii" not found in C:\laragon\www\ServiceWareProg3\controllers\ProdutoController.php:35
+Stack trace:
+#0 [internal function]: app\controllers\ProdutoController->app\controllers\{closure}(NULL, Object(yii\base\InlineAction))
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\filters\AccessControl.php(138): call_user_func(Object(Closure), NULL, Object(yii\base\InlineAction))
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(645): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#9 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('produto', Array)
+#10 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2025-06-28 19:20:51 [::1][-][j83h82nkjrrvm0tv5gc8mh59sa][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    '_csrf' => 'ec41e99a1f117fcfd21b193d5207c611d163868f6f4c10750bff284c26835425a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rlaoRjCAtPa1imoHfAQIZvP2KLgUwpj2\";}'
+    'PHPSESSID' => 'j83h82nkjrrvm0tv5gc8mh59sa'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/ServiceWareProg3/web/produto'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; _csrf=ec41e99a1f117fcfd21b193d5207c611d163868f6f4c10750bff284c26835425a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rlaoRjCAtPa1imoHfAQIZvP2KLgUwpj2%22%3B%7D; PHPSESSID=j83h82nkjrrvm0tv5gc8mh59sa'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '62583'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/produto'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/produto'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751138451.5242
+    'REQUEST_TIME' => 1751138451
+]
+2025-06-28 19:21:23 [::1][-][et8ln94090i8nv43d7i3gfdhuv][error][Error] Error: Class "app\controllers\Yii" not found in C:\laragon\www\ServiceWareProg3\controllers\ProdutoController.php:35
+Stack trace:
+#0 [internal function]: app\controllers\ProdutoController->app\controllers\{closure}(NULL, Object(yii\base\InlineAction))
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\filters\AccessControl.php(138): call_user_func(Object(Closure), NULL, Object(yii\base\InlineAction))
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(645): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#9 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('produto', Array)
+#10 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2025-06-28 19:21:23 [::1][-][et8ln94090i8nv43d7i3gfdhuv][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    '_csrf' => '7ad78342bade075742b39a42ec747e1824546a5e08110875e5cccce141662f01a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"D7-qFMxtlp9h0MFrFissstv4XvC6zG5a\";}'
+    'PHPSESSID' => 'et8ln94090i8nv43d7i3gfdhuv'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; _csrf=7ad78342bade075742b39a42ec747e1824546a5e08110875e5cccce141662f01a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D7-qFMxtlp9h0MFrFissstv4XvC6zG5a%22%3B%7D; PHPSESSID=et8ln94090i8nv43d7i3gfdhuv'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '62594'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/produto'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/produto'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751138483.0983
+    'REQUEST_TIME' => 1751138483
+]
+2025-06-28 19:25:10 [::1][-][et8ln94090i8nv43d7i3gfdhuv][error][yii\di\NotInstantiableException] ReflectionException: Class "app\controllers\AccessControl" does not exist in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php:507
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php(507): ReflectionClass->__construct('app\\controllers...')
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php(385): yii\di\Container->getDependencies('app\\controllers...')
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('app\\controllers...', Array, Array)
+#3 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('app\\controllers...', Array, Array)
+#4 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(768): yii\BaseYii::createObject(Array)
+#5 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(752): yii\base\Component->attachBehaviorInternal('access', Array)
+#6 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(621): yii\base\Component->ensureBehaviors()
+#7 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#8 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#9 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#10 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#11 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('veiculo', Array)
+#12 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#14 {main}
+
+Next yii\di\NotInstantiableException: Failed to instantiate component or class "app\controllers\AccessControl". in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php:509
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php(385): yii\di\Container->getDependencies('app\\controllers...')
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('app\\controllers...', Array, Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('app\\controllers...', Array, Array)
+#3 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(768): yii\BaseYii::createObject(Array)
+#4 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(752): yii\base\Component->attachBehaviorInternal('access', Array)
+#5 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(621): yii\base\Component->ensureBehaviors()
+#6 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#7 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#9 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#10 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('veiculo', Array)
+#11 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2025-06-28 19:25:10 [::1][-][et8ln94090i8nv43d7i3gfdhuv][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    '_csrf' => '7ad78342bade075742b39a42ec747e1824546a5e08110875e5cccce141662f01a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"D7-qFMxtlp9h0MFrFissstv4XvC6zG5a\";}'
+    'PHPSESSID' => 'et8ln94090i8nv43d7i3gfdhuv'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; _csrf=7ad78342bade075742b39a42ec747e1824546a5e08110875e5cccce141662f01a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D7-qFMxtlp9h0MFrFissstv4XvC6zG5a%22%3B%7D; PHPSESSID=et8ln94090i8nv43d7i3gfdhuv'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '62609'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/veiculo'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/veiculo'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751138710.2629
+    'REQUEST_TIME' => 1751138710
+]
+2025-06-28 19:25:12 [::1][-][et8ln94090i8nv43d7i3gfdhuv][error][yii\di\NotInstantiableException] ReflectionException: Class "app\controllers\AccessControl" does not exist in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php:507
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php(507): ReflectionClass->__construct('app\\controllers...')
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php(385): yii\di\Container->getDependencies('app\\controllers...')
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('app\\controllers...', Array, Array)
+#3 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('app\\controllers...', Array, Array)
+#4 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(768): yii\BaseYii::createObject(Array)
+#5 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(752): yii\base\Component->attachBehaviorInternal('access', Array)
+#6 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(621): yii\base\Component->ensureBehaviors()
+#7 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#8 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#9 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#10 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#11 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('veiculo/index', Array)
+#12 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#14 {main}
+
+Next yii\di\NotInstantiableException: Failed to instantiate component or class "app\controllers\AccessControl". in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php:509
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php(385): yii\di\Container->getDependencies('app\\controllers...')
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('app\\controllers...', Array, Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('app\\controllers...', Array, Array)
+#3 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(768): yii\BaseYii::createObject(Array)
+#4 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(752): yii\base\Component->attachBehaviorInternal('access', Array)
+#5 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(621): yii\base\Component->ensureBehaviors()
+#6 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#7 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#9 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#10 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('veiculo/index', Array)
+#11 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2025-06-28 19:25:12 [::1][-][et8ln94090i8nv43d7i3gfdhuv][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    '_csrf' => '7ad78342bade075742b39a42ec747e1824546a5e08110875e5cccce141662f01a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"D7-qFMxtlp9h0MFrFissstv4XvC6zG5a\";}'
+    'PHPSESSID' => 'et8ln94090i8nv43d7i3gfdhuv'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; _csrf=7ad78342bade075742b39a42ec747e1824546a5e08110875e5cccce141662f01a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D7-qFMxtlp9h0MFrFissstv4XvC6zG5a%22%3B%7D; PHPSESSID=et8ln94090i8nv43d7i3gfdhuv'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '62608'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/veiculos'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/veiculos'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751138712.8871
+    'REQUEST_TIME' => 1751138712
+]
+2025-06-28 19:25:18 [::1][-][et8ln94090i8nv43d7i3gfdhuv][error][yii\di\NotInstantiableException] ReflectionException: Class "app\controllers\AccessControl" does not exist in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php:507
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php(507): ReflectionClass->__construct('app\\controllers...')
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php(385): yii\di\Container->getDependencies('app\\controllers...')
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('app\\controllers...', Array, Array)
+#3 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('app\\controllers...', Array, Array)
+#4 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(768): yii\BaseYii::createObject(Array)
+#5 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(752): yii\base\Component->attachBehaviorInternal('access', Array)
+#6 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(621): yii\base\Component->ensureBehaviors()
+#7 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#8 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#9 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#10 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#11 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('cliente', Array)
+#12 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#14 {main}
+
+Next yii\di\NotInstantiableException: Failed to instantiate component or class "app\controllers\AccessControl". in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php:509
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php(385): yii\di\Container->getDependencies('app\\controllers...')
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('app\\controllers...', Array, Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('app\\controllers...', Array, Array)
+#3 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(768): yii\BaseYii::createObject(Array)
+#4 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(752): yii\base\Component->attachBehaviorInternal('access', Array)
+#5 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(621): yii\base\Component->ensureBehaviors()
+#6 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#7 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#9 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#10 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('cliente', Array)
+#11 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2025-06-28 19:25:18 [::1][-][et8ln94090i8nv43d7i3gfdhuv][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    '_csrf' => '7ad78342bade075742b39a42ec747e1824546a5e08110875e5cccce141662f01a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"D7-qFMxtlp9h0MFrFissstv4XvC6zG5a\";}'
+    'PHPSESSID' => 'et8ln94090i8nv43d7i3gfdhuv'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; _csrf=7ad78342bade075742b39a42ec747e1824546a5e08110875e5cccce141662f01a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D7-qFMxtlp9h0MFrFissstv4XvC6zG5a%22%3B%7D; PHPSESSID=et8ln94090i8nv43d7i3gfdhuv'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '62612'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/cliente'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/cliente'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751138718.0954
+    'REQUEST_TIME' => 1751138718
+]
+2025-06-28 19:25:33 [::1][-][et8ln94090i8nv43d7i3gfdhuv][error][yii\di\NotInstantiableException] ReflectionException: Class "app\controllers\AccessControl" does not exist in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php:507
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php(507): ReflectionClass->__construct('app\\controllers...')
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php(385): yii\di\Container->getDependencies('app\\controllers...')
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('app\\controllers...', Array, Array)
+#3 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('app\\controllers...', Array, Array)
+#4 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(768): yii\BaseYii::createObject(Array)
+#5 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(752): yii\base\Component->attachBehaviorInternal('access', Array)
+#6 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(621): yii\base\Component->ensureBehaviors()
+#7 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#8 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#9 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#10 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#11 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('ordem', Array)
+#12 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#14 {main}
+
+Next yii\di\NotInstantiableException: Failed to instantiate component or class "app\controllers\AccessControl". in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php:509
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php(385): yii\di\Container->getDependencies('app\\controllers...')
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('app\\controllers...', Array, Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('app\\controllers...', Array, Array)
+#3 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(768): yii\BaseYii::createObject(Array)
+#4 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(752): yii\base\Component->attachBehaviorInternal('access', Array)
+#5 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(621): yii\base\Component->ensureBehaviors()
+#6 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#7 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#9 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#10 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('ordem', Array)
+#11 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2025-06-28 19:25:33 [::1][-][et8ln94090i8nv43d7i3gfdhuv][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    '_csrf' => '7ad78342bade075742b39a42ec747e1824546a5e08110875e5cccce141662f01a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"D7-qFMxtlp9h0MFrFissstv4XvC6zG5a\";}'
+    'PHPSESSID' => 'et8ln94090i8nv43d7i3gfdhuv'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; _csrf=7ad78342bade075742b39a42ec747e1824546a5e08110875e5cccce141662f01a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D7-qFMxtlp9h0MFrFissstv4XvC6zG5a%22%3B%7D; PHPSESSID=et8ln94090i8nv43d7i3gfdhuv'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '62618'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/ordem'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/ordem'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751138733.9205
+    'REQUEST_TIME' => 1751138733
+]
+2025-06-28 19:30:17 [::1][-][d1d816na57abrgds1ljkvr09gc][error][yii\di\NotInstantiableException] ReflectionException: Class "app\controllers\AccessControl" does not exist in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php:507
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php(507): ReflectionClass->__construct('app\\controllers...')
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php(385): yii\di\Container->getDependencies('app\\controllers...')
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('app\\controllers...', Array, Array)
+#3 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('app\\controllers...', Array, Array)
+#4 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(768): yii\BaseYii::createObject(Array)
+#5 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(752): yii\base\Component->attachBehaviorInternal('access', Array)
+#6 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(621): yii\base\Component->ensureBehaviors()
+#7 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#8 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#9 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#10 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#11 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('produto', Array)
+#12 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#14 {main}
+
+Next yii\di\NotInstantiableException: Failed to instantiate component or class "app\controllers\AccessControl". in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php:509
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php(385): yii\di\Container->getDependencies('app\\controllers...')
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('app\\controllers...', Array, Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('app\\controllers...', Array, Array)
+#3 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(768): yii\BaseYii::createObject(Array)
+#4 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(752): yii\base\Component->attachBehaviorInternal('access', Array)
+#5 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(621): yii\base\Component->ensureBehaviors()
+#6 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#7 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#9 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#10 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('produto', Array)
+#11 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2025-06-28 19:30:17 [::1][-][d1d816na57abrgds1ljkvr09gc][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    '_csrf' => '5fd65dbad8ddc9b0ab2cd0bef5f4a61347ee67515f9887cd19249245e9707046a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nXCCyL_Znas7pnQ_OLz4fR9RKwZ_p-MY\";}'
+    'PHPSESSID' => 'd1d816na57abrgds1ljkvr09gc'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/ServiceWareProg3/web/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; _csrf=5fd65dbad8ddc9b0ab2cd0bef5f4a61347ee67515f9887cd19249245e9707046a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nXCCyL_Znas7pnQ_OLz4fR9RKwZ_p-MY%22%3B%7D; PHPSESSID=d1d816na57abrgds1ljkvr09gc'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '62652'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/produto'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/produto'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751139017.5839
+    'REQUEST_TIME' => 1751139017
+]
+2025-06-28 19:32:21 [::1][-][d1d816na57abrgds1ljkvr09gc][error][yii\di\NotInstantiableException] ReflectionException: Class "app\controllers\AccessControl" does not exist in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php:507
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php(507): ReflectionClass->__construct('app\\controllers...')
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php(385): yii\di\Container->getDependencies('app\\controllers...')
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('app\\controllers...', Array, Array)
+#3 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('app\\controllers...', Array, Array)
+#4 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(768): yii\BaseYii::createObject(Array)
+#5 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(752): yii\base\Component->attachBehaviorInternal('access', Array)
+#6 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(621): yii\base\Component->ensureBehaviors()
+#7 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#8 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#9 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#10 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#11 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('veiculo', Array)
+#12 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#14 {main}
+
+Next yii\di\NotInstantiableException: Failed to instantiate component or class "app\controllers\AccessControl". in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php:509
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php(385): yii\di\Container->getDependencies('app\\controllers...')
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('app\\controllers...', Array, Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('app\\controllers...', Array, Array)
+#3 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(768): yii\BaseYii::createObject(Array)
+#4 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(752): yii\base\Component->attachBehaviorInternal('access', Array)
+#5 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(621): yii\base\Component->ensureBehaviors()
+#6 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#7 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#9 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#10 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('veiculo', Array)
+#11 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2025-06-28 19:32:21 [::1][-][d1d816na57abrgds1ljkvr09gc][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    '_csrf' => '5fd65dbad8ddc9b0ab2cd0bef5f4a61347ee67515f9887cd19249245e9707046a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nXCCyL_Znas7pnQ_OLz4fR9RKwZ_p-MY\";}'
+    'PHPSESSID' => 'd1d816na57abrgds1ljkvr09gc'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/ServiceWareProg3/web/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; _csrf=5fd65dbad8ddc9b0ab2cd0bef5f4a61347ee67515f9887cd19249245e9707046a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nXCCyL_Znas7pnQ_OLz4fR9RKwZ_p-MY%22%3B%7D; PHPSESSID=d1d816na57abrgds1ljkvr09gc'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '62664'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/veiculo'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/veiculo'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751139141.7719
+    'REQUEST_TIME' => 1751139141
+]
+2025-06-28 19:32:24 [::1][-][d1d816na57abrgds1ljkvr09gc][error][yii\di\NotInstantiableException] ReflectionException: Class "app\controllers\AccessControl" does not exist in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php:507
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php(507): ReflectionClass->__construct('app\\controllers...')
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php(385): yii\di\Container->getDependencies('app\\controllers...')
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('app\\controllers...', Array, Array)
+#3 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('app\\controllers...', Array, Array)
+#4 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(768): yii\BaseYii::createObject(Array)
+#5 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(752): yii\base\Component->attachBehaviorInternal('access', Array)
+#6 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(621): yii\base\Component->ensureBehaviors()
+#7 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#8 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#9 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#10 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#11 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('veiculo/index', Array)
+#12 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#14 {main}
+
+Next yii\di\NotInstantiableException: Failed to instantiate component or class "app\controllers\AccessControl". in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php:509
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php(385): yii\di\Container->getDependencies('app\\controllers...')
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('app\\controllers...', Array, Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('app\\controllers...', Array, Array)
+#3 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(768): yii\BaseYii::createObject(Array)
+#4 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(752): yii\base\Component->attachBehaviorInternal('access', Array)
+#5 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Component.php(621): yii\base\Component->ensureBehaviors()
+#6 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#7 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#9 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#10 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('veiculo/index', Array)
+#11 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2025-06-28 19:32:24 [::1][-][d1d816na57abrgds1ljkvr09gc][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    '_csrf' => '5fd65dbad8ddc9b0ab2cd0bef5f4a61347ee67515f9887cd19249245e9707046a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nXCCyL_Znas7pnQ_OLz4fR9RKwZ_p-MY\";}'
+    'PHPSESSID' => 'd1d816na57abrgds1ljkvr09gc'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/ServiceWareProg3/web/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; _csrf=5fd65dbad8ddc9b0ab2cd0bef5f4a61347ee67515f9887cd19249245e9707046a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nXCCyL_Znas7pnQ_OLz4fR9RKwZ_p-MY%22%3B%7D; PHPSESSID=d1d816na57abrgds1ljkvr09gc'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '62665'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/veiculos'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/veiculos'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751139144.3159
+    'REQUEST_TIME' => 1751139144
+]

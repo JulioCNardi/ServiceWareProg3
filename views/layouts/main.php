@@ -31,6 +31,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 
 <header id="header">
     <?php
+
     NavBar::begin([
         'brandLabel' => Yii::$app->name,
         'brandUrl' => Yii::$app->homeUrl,
@@ -40,15 +41,15 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
         'options' => ['class' => 'navbar-nav'],
         'items' => [
             ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'About', 'url' => ['/site/about']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
+            ['label' => 'Sobre nós', 'url' => ['/site/about']],
+            ['label' => 'Contato', 'url' => ['/site/contact']],
             Yii::$app->user->isGuest
                 ? ['label' => 'Login', 'url' => ['/site/login']]
                 : '<li class="nav-item">'
-                    . Html::beginForm(['/site/logout'])
+                    . Html::beginForm(['/site/logout'], 'post', ['id' => 'logout-form']) // Adicione um ID ao formulário
                     . Html::submitButton(
                         'Logout (' . Yii::$app->user->identity->username . ')',
-                        ['class' => 'nav-link btn btn-link logout']
+                        ['class' => 'nav-link btn btn-link logout', 'id' => 'logout-button'] // Adicione um ID ao botão
                     )
                     . Html::endForm()
                     . '</li>'
@@ -57,6 +58,17 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
     NavBar::end();
     ?>
 </header>
+
+<?php
+$this->registerJs(<<<JS
+    document.getElementById('logout-button').addEventListener('click', function(e) {
+        if (!confirm('Tem certeza de que deseja sair do sistema?')) {
+            e.preventDefault(); // Impede o envio do formulário se o usuário cancelar
+        }
+    });
+JS
+);
+?>
 
 <main id="main" class="flex-shrink-0" role="main">
     <div class="container">
@@ -71,7 +83,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 <footer id="footer" class="mt-auto py-3 bg-light">
     <div class="container">
         <div class="row text-muted">
-            <div class="col-md-6 text-center text-md-start">&copy; My Company <?= date('Y') ?></div>
+            <div class="col-md-6 text-center text-md-start">&copy; ServiceWare <?= date('Y') ?></div>
             <div class="col-md-6 text-center text-md-end"><?= Yii::powered() ?></div>
         </div>
     </div>

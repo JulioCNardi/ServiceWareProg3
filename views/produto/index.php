@@ -28,7 +28,6 @@ $this->title = 'Produtos';
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
 
             'idProduto',
             'nome',
