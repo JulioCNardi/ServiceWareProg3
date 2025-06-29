@@ -18,7 +18,7 @@ $this->title = 'Ordens';
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Ordem', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Nova Ordem', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php Pjax::begin(); ?>

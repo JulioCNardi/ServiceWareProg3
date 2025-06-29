@@ -17,7 +17,7 @@ $this->title = 'Clientes';
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Cliente', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Novo Cliente', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php Pjax::begin(); ?>
