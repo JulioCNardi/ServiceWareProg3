@@ -53,7 +53,7 @@ $config = [
                 'contato' => 'site/contact',
                 'login' => 'site/login',
                 'logout' => 'site/logout',
-                'sobre' => 'site/about', // Se você tiver uma ação 'about' no SiteController
+                'modules' => 'site/modules', // Se você tiver uma ação 'about' no SiteController
 
                 // 2. Regras para listagem principal dos recursos (opcional, para URLs mais curtas)
                 // Ex: /clientes ao invés de /cliente/index

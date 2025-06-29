@@ -2815,3 +2815,2320 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1751139144.3159
     'REQUEST_TIME' => 1751139144
 ]
+2025-06-28 20:47:56 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\laragon\www\ServiceWareProg3\views\site\about.php in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php:234
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\laragon\\www\\...', Array, Object(app\controllers\SiteController))
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('about', Array, Object(app\controllers\SiteController))
+#2 C:\laragon\www\ServiceWareProg3\controllers\SiteController.php(126): yii\base\Controller->render('about')
+#3 [internal function]: app\controllers\SiteController->actionAbout()
+#4 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#6 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('about', Array)
+#7 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/about', Array)
+#8 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#10 {main}
+2025-06-28 20:47:56 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    'PHPSESSID' => '6vv1vpbetp2frjtaottqr2mmn8'
+    '_identity' => 'df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'cekbun'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/ServiceWareProg3/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; PHPSESSID=6vv1vpbetp2frjtaottqr2mmn8; _identity=df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '55893'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/sobre'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/sobre'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751143676.491
+    'REQUEST_TIME' => 1751143676
+]
+2025-06-28 20:48:00 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/modules in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('modules', Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/modules', Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2025-06-28 20:47:59 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    'PHPSESSID' => '6vv1vpbetp2frjtaottqr2mmn8'
+    '_identity' => 'df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'cekbun'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/ServiceWareProg3/web/contato'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; PHPSESSID=6vv1vpbetp2frjtaottqr2mmn8; _identity=df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '55895'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/site/modules'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/site/modules'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751143679.9877
+    'REQUEST_TIME' => 1751143679
+]
+2025-06-28 20:48:00 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/modules in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('modules', Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/modules', Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2025-06-28 20:48:00 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    'PHPSESSID' => '6vv1vpbetp2frjtaottqr2mmn8'
+    '_identity' => 'df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'cekbun'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/ServiceWareProg3/web/site/modules'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; PHPSESSID=6vv1vpbetp2frjtaottqr2mmn8; _identity=df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '55895'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/site/modules'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/site/modules'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751143680.813
+    'REQUEST_TIME' => 1751143680
+]
+2025-06-28 20:48:50 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/modules in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('modules', Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/modules', Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2025-06-28 20:48:50 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    'PHPSESSID' => '6vv1vpbetp2frjtaottqr2mmn8'
+    '_identity' => 'df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'cekbun'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/ServiceWareProg3/web/site/modules'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; PHPSESSID=6vv1vpbetp2frjtaottqr2mmn8; _identity=df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '55896'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/site/modules'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/site/modules'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751143730.9126
+    'REQUEST_TIME' => 1751143730
+]
+2025-06-28 20:48:51 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/modules in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('modules', Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/modules', Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2025-06-28 20:48:51 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    'PHPSESSID' => '6vv1vpbetp2frjtaottqr2mmn8'
+    '_identity' => 'df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'cekbun'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/ServiceWareProg3/web/site/modules'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; PHPSESSID=6vv1vpbetp2frjtaottqr2mmn8; _identity=df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '55896'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/site/modules'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/site/modules'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751143731.5043
+    'REQUEST_TIME' => 1751143731
+]
+2025-06-28 20:48:51 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/modules in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('modules', Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/modules', Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2025-06-28 20:48:51 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    'PHPSESSID' => '6vv1vpbetp2frjtaottqr2mmn8'
+    '_identity' => 'df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'cekbun'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/ServiceWareProg3/web/site/modules'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; PHPSESSID=6vv1vpbetp2frjtaottqr2mmn8; _identity=df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '55896'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/site/modules'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/site/modules'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751143731.7277
+    'REQUEST_TIME' => 1751143731
+]
+2025-06-28 20:48:51 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/modules in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('modules', Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/modules', Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2025-06-28 20:48:51 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    'PHPSESSID' => '6vv1vpbetp2frjtaottqr2mmn8'
+    '_identity' => 'df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'cekbun'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/ServiceWareProg3/web/site/modules'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; PHPSESSID=6vv1vpbetp2frjtaottqr2mmn8; _identity=df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '55896'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/site/modules'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/site/modules'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751143731.9607
+    'REQUEST_TIME' => 1751143731
+]
+2025-06-28 20:48:52 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/modules in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('modules', Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/modules', Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2025-06-28 20:48:52 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    'PHPSESSID' => '6vv1vpbetp2frjtaottqr2mmn8'
+    '_identity' => 'df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'cekbun'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/ServiceWareProg3/web/site/modules'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; PHPSESSID=6vv1vpbetp2frjtaottqr2mmn8; _identity=df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '55896'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/site/modules'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/site/modules'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751143732.2965
+    'REQUEST_TIME' => 1751143732
+]
+2025-06-28 20:48:59 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/modules in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('modules', Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/modules', Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2025-06-28 20:48:59 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    'PHPSESSID' => '6vv1vpbetp2frjtaottqr2mmn8'
+    '_identity' => 'df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'cekbun'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/ServiceWareProg3/web/site/modules'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; PHPSESSID=6vv1vpbetp2frjtaottqr2mmn8; _identity=df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '55898'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/site/modules'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/site/modules'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751143739.5532
+    'REQUEST_TIME' => 1751143739
+]
+2025-06-28 20:49:00 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/modules in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('modules', Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/modules', Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2025-06-28 20:49:00 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    'PHPSESSID' => '6vv1vpbetp2frjtaottqr2mmn8'
+    '_identity' => 'df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'cekbun'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/ServiceWareProg3/web/site/modules'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; PHPSESSID=6vv1vpbetp2frjtaottqr2mmn8; _identity=df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '55898'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/site/modules'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/site/modules'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751143740.0556
+    'REQUEST_TIME' => 1751143740
+]
+2025-06-28 20:49:17 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/modules in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('modules', Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/modules', Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2025-06-28 20:49:17 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    'PHPSESSID' => '6vv1vpbetp2frjtaottqr2mmn8'
+    '_identity' => 'df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'cekbun'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/ServiceWareProg3/web/site/modules'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; PHPSESSID=6vv1vpbetp2frjtaottqr2mmn8; _identity=df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '55901'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/site/modules'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/site/modules'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751143757.7838
+    'REQUEST_TIME' => 1751143757
+]
+2025-06-28 20:49:18 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/modules in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('modules', Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/modules', Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2025-06-28 20:49:18 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    'PHPSESSID' => '6vv1vpbetp2frjtaottqr2mmn8'
+    '_identity' => 'df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'cekbun'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/ServiceWareProg3/web/site/modules'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; PHPSESSID=6vv1vpbetp2frjtaottqr2mmn8; _identity=df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '55902'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/site/modules'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/site/modules'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751143758.3829
+    'REQUEST_TIME' => 1751143758
+]
+2025-06-28 20:49:18 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/modules in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('modules', Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/modules', Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2025-06-28 20:49:18 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    'PHPSESSID' => '6vv1vpbetp2frjtaottqr2mmn8'
+    '_identity' => 'df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'cekbun'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/ServiceWareProg3/web/site/modules'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; PHPSESSID=6vv1vpbetp2frjtaottqr2mmn8; _identity=df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '55902'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/site/modules'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/site/modules'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751143758.8227
+    'REQUEST_TIME' => 1751143758
+]
+2025-06-28 20:49:19 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/modules in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('modules', Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/modules', Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2025-06-28 20:49:19 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    'PHPSESSID' => '6vv1vpbetp2frjtaottqr2mmn8'
+    '_identity' => 'df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'cekbun'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/ServiceWareProg3/web/site/modules'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; PHPSESSID=6vv1vpbetp2frjtaottqr2mmn8; _identity=df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '55902'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/site/modules'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/site/modules'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751143759.1828
+    'REQUEST_TIME' => 1751143759
+]
+2025-06-28 20:49:19 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/modules in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('modules', Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/modules', Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2025-06-28 20:49:19 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    'PHPSESSID' => '6vv1vpbetp2frjtaottqr2mmn8'
+    '_identity' => 'df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'cekbun'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/ServiceWareProg3/web/site/modules'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; PHPSESSID=6vv1vpbetp2frjtaottqr2mmn8; _identity=df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '55902'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/site/modules'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/site/modules'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751143759.5742
+    'REQUEST_TIME' => 1751143759
+]
+2025-06-28 20:49:24 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/modules in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('modules', Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/modules', Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2025-06-28 20:49:24 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    'PHPSESSID' => '6vv1vpbetp2frjtaottqr2mmn8'
+    '_identity' => 'df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'cekbun'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/ServiceWareProg3/web/site/modules'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; PHPSESSID=6vv1vpbetp2frjtaottqr2mmn8; _identity=df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '55902'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/site/modules'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/site/modules'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751143764.0231
+    'REQUEST_TIME' => 1751143764
+]
+2025-06-28 20:49:24 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/modules in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('modules', Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/modules', Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2025-06-28 20:49:24 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    'PHPSESSID' => '6vv1vpbetp2frjtaottqr2mmn8'
+    '_identity' => 'df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'cekbun'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/ServiceWareProg3/web/site/modules'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; PHPSESSID=6vv1vpbetp2frjtaottqr2mmn8; _identity=df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '55902'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/site/modules'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/site/modules'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751143764.574
+    'REQUEST_TIME' => 1751143764
+]
+2025-06-28 20:49:25 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/modules in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('modules', Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/modules', Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2025-06-28 20:49:25 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    'PHPSESSID' => '6vv1vpbetp2frjtaottqr2mmn8'
+    '_identity' => 'df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'cekbun'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/ServiceWareProg3/web/site/modules'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; PHPSESSID=6vv1vpbetp2frjtaottqr2mmn8; _identity=df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '55902'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/site/modules'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/site/modules'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751143765.0141
+    'REQUEST_TIME' => 1751143765
+]
+2025-06-28 20:49:25 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/modules in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('modules', Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/modules', Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2025-06-28 20:49:25 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    'PHPSESSID' => '6vv1vpbetp2frjtaottqr2mmn8'
+    '_identity' => 'df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'cekbun'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/ServiceWareProg3/web/site/modules'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; PHPSESSID=6vv1vpbetp2frjtaottqr2mmn8; _identity=df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '55902'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/site/modules'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/site/modules'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751143765.2061
+    'REQUEST_TIME' => 1751143765
+]
+2025-06-28 20:49:29 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/modules in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('modules', Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/modules', Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2025-06-28 20:49:29 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    'PHPSESSID' => '6vv1vpbetp2frjtaottqr2mmn8'
+    '_identity' => 'df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'cekbun'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/ServiceWareProg3/web/site/modules'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; PHPSESSID=6vv1vpbetp2frjtaottqr2mmn8; _identity=df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '55902'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/site/modules'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/site/modules'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751143769.198
+    'REQUEST_TIME' => 1751143769
+]
+2025-06-28 20:49:30 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/modules in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('modules', Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/modules', Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2025-06-28 20:49:30 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    'PHPSESSID' => '6vv1vpbetp2frjtaottqr2mmn8'
+    '_identity' => 'df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'cekbun'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/ServiceWareProg3/web/site/modules'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; PHPSESSID=6vv1vpbetp2frjtaottqr2mmn8; _identity=df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '55902'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/site/modules'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/site/modules'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751143770.094
+    'REQUEST_TIME' => 1751143770
+]
+2025-06-28 20:49:30 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/modules in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('modules', Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/modules', Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2025-06-28 20:49:30 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    'PHPSESSID' => '6vv1vpbetp2frjtaottqr2mmn8'
+    '_identity' => 'df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'cekbun'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/ServiceWareProg3/web/site/modules'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; PHPSESSID=6vv1vpbetp2frjtaottqr2mmn8; _identity=df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '55902'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/site/modules'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/site/modules'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751143770.5949
+    'REQUEST_TIME' => 1751143770
+]
+2025-06-28 20:49:30 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/modules in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('modules', Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/modules', Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2025-06-28 20:49:30 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    'PHPSESSID' => '6vv1vpbetp2frjtaottqr2mmn8'
+    '_identity' => 'df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'cekbun'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/ServiceWareProg3/web/site/modules'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; PHPSESSID=6vv1vpbetp2frjtaottqr2mmn8; _identity=df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '55901'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/site/modules'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/site/modules'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751143770.6274
+    'REQUEST_TIME' => 1751143770
+]
+2025-06-28 20:49:30 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/modules in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('modules', Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/modules', Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2025-06-28 20:49:30 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    'PHPSESSID' => '6vv1vpbetp2frjtaottqr2mmn8'
+    '_identity' => 'df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'cekbun'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/ServiceWareProg3/web/site/modules'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; PHPSESSID=6vv1vpbetp2frjtaottqr2mmn8; _identity=df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '55903'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/site/modules'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/site/modules'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751143770.6616
+    'REQUEST_TIME' => 1751143770
+]
+2025-06-28 20:49:49 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/modules in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('modules', Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/modules', Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2025-06-28 20:49:49 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    'PHPSESSID' => '6vv1vpbetp2frjtaottqr2mmn8'
+    '_identity' => 'df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'cekbun'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/ServiceWareProg3/web/site/modules'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; PHPSESSID=6vv1vpbetp2frjtaottqr2mmn8; _identity=df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '55908'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/site/modules'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/site/modules'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751143789.7257
+    'REQUEST_TIME' => 1751143789
+]
+2025-06-28 20:49:50 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\laragon\www\ServiceWareProg3\views\site\about.php in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php:234
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\laragon\\www\\...', Array, Object(app\controllers\SiteController))
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('about', Array, Object(app\controllers\SiteController))
+#2 C:\laragon\www\ServiceWareProg3\controllers\SiteController.php(126): yii\base\Controller->render('about')
+#3 [internal function]: app\controllers\SiteController->actionAbout()
+#4 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#6 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('about', Array)
+#7 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/about', Array)
+#8 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#10 {main}
+2025-06-28 20:49:50 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    'PHPSESSID' => '6vv1vpbetp2frjtaottqr2mmn8'
+    '_identity' => 'df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'cekbun'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/ServiceWareProg3/web/site/modules'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; PHPSESSID=6vv1vpbetp2frjtaottqr2mmn8; _identity=df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '55908'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/site/about'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/site/about'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751143790.928
+    'REQUEST_TIME' => 1751143790
+]
+2025-06-28 20:49:52 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/modules in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('modules', Array)
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/modules', Array)
+#2 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2025-06-28 20:49:52 [::1][100][6vv1vpbetp2frjtaottqr2mmn8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    'PHPSESSID' => '6vv1vpbetp2frjtaottqr2mmn8'
+    '_identity' => 'df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'cekbun'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/ServiceWareProg3/web/site/modules'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; PHPSESSID=6vv1vpbetp2frjtaottqr2mmn8; _identity=df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=6dba70524ce655ce261643584438280037e322a2aab089cb8d47ce5f36cac0a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wCgAYPF0IfSSWff6AG1uSN4ERLG1kV_L%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '55909'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/site/modules'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/site/modules'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751143792.7571
+    'REQUEST_TIME' => 1751143792
+]
+2025-06-28 20:50:08 [::1][100][79de4lbmjfda81ipapoe3sme4s][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\laragon\www\ServiceWareProg3\views\site\about.php in C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php:234
+Stack trace:
+#0 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\laragon\\www\\...', Array, Object(app\controllers\SiteController))
+#1 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('about', Array, Object(app\controllers\SiteController))
+#2 C:\laragon\www\ServiceWareProg3\controllers\SiteController.php(126): yii\base\Controller->render('about')
+#3 [internal function]: app\controllers\SiteController->actionAbout()
+#4 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#6 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('about', Array)
+#7 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/about', Array)
+#8 C:\laragon\www\ServiceWareProg3\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\laragon\www\ServiceWareProg3\web\index.php(12): yii\base\Application->run()
+#10 {main}
+2025-06-28 20:50:08 [::1][100][79de4lbmjfda81ipapoe3sme4s][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tkub04909qial1th19cf4v599c'
+    '_csrf-backend' => '2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM\";}'
+    'PHPSESSID' => '79de4lbmjfda81ipapoe3sme4s'
+    '_identity' => 'df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '09586fd3d53e3cbaac3ee1461fc62c33f91b5e96dc8debe583e42fa6bdc733a1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6pRXkgCjaye8RchW-frEg67Qyi_KOsOS\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera GX\";v=\"119\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/ServiceWareProg3/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-backend=tkub04909qial1th19cf4v599c; _csrf-backend=2446ce5e5e5f1fcee59e798c14e98e44ad2285ba6234c7998c510b4dbb8990f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DzcmCS32wXjWmMCQfGsrUNSEPgvdP-vM%22%3B%7D; PHPSESSID=79de4lbmjfda81ipapoe3sme4s; _identity=df5a793598cf68fa188e9c28cc12327a25fc7ed526fb6481a20491ce542bb331a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=09586fd3d53e3cbaac3ee1461fc62c33f91b5e96dc8debe583e42fa6bdc733a1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226pRXkgCjaye8RchW-frEg67Qyi_KOsOS%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/ServiceWareProg3/web/index.php'
+    'REMOTE_PORT' => '55910'
+    'REDIRECT_URL' => '/ServiceWareProg3/web/site/about'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ServiceWareProg3/web/site/about'
+    'SCRIPT_NAME' => '/ServiceWareProg3/web/index.php'
+    'PHP_SELF' => '/ServiceWareProg3/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1751143808.6934
+    'REQUEST_TIME' => 1751143808
+]
