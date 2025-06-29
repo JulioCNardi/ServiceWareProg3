@@ -29,8 +29,7 @@ $this->title = 'ServiceWare';
 
                 <p>A ServiceWare é uma empresa especializada no desenvolvimento de soluções em software voltadas para o setor automotivo. Nosso principal produto é um sistema completo de ordem de serviço para oficinas mecânicas, criado para simplificar a gestão, organizar atendimentos e aumentar a eficiência no dia a dia das oficinas. Com uma interface prática e recursos sob medida, ajudamos mecânicos e gestores a manterem o controle total de seus serviços, clientes e veículos.</p>
 
-                <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
-            </div>
+                         </div>
 
         </div>
 
