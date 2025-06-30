@@ -1,3 +1,14 @@
+Projeto para banco de dados 3 utilizando template básico Yii2 para a matéria de Programação III.
+
+Alunos:
+Acadêmico da 5º Fase Ciência da Computação  - UNOESC - E-mail: alex.kk@unoesc.edu.br
+Acadêmico da 5° Fase Ciência da Computação - UNOESC - E-mail: jandirc.basegio@gmail.com
+Acadêmico da 5° Fase Ciência da Computação - UNOESC - E-mail: joaopsoares135@gmail.com 
+Acadêmico da 5° Fase Ciência da Computação - UNOESC - E-mail:  julio.cesarnardi88@gmail.com
+
+
+
+
 <p align="center">
     <a href="https://github.com/yiisoft" target="_blank">
         <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
